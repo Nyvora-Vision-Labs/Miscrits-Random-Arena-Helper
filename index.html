@@ -1,0 +1,3349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miscrits Arena — Draft Oracle</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #07070f;
+        --surface: #10101c;
+        --card: #15152a;
+        --border: #2a2a45;
+        --gold: #c9a227;
+        --gold-light: #e8c547;
+        --gold-dim: #7a5f10;
+        --text: #e2d9c8;
+        --text-muted: #8a8070;
+        --text-dim: #3a3530;
+        --green-spd: #57cc99;
+        --red-spd: #e07070;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Crimson Pro", Georgia, serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(
+            ellipse 60% 40% at 15% 10%,
+            rgba(201, 162, 39, 0.04) 0%,
+            transparent 70%
+          ),
+          radial-gradient(
+            ellipse 50% 50% at 85% 90%,
+            rgba(155, 93, 229, 0.04) 0%,
+            transparent 70%
+          ),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 2 L38 20 L20 38 L2 20 Z' fill='none' stroke='%232a2a45' stroke-width='0.3'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 0;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(7, 7, 15, 0.93);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--border);
+      }
+      .header-inner {
+        max-width: 1460px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 2rem;
+        height: 62px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        flex-shrink: 0;
+      }
+      .logo-text {
+        font-family: "Cinzel", serif;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.14em;
+        color: var(--gold);
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+      .logo-text span {
+        display: block;
+        font-size: 9px;
+        font-weight: 400;
+        letter-spacing: 0.28em;
+        color: var(--text-muted);
+      }
+      nav {
+        display: flex;
+        gap: 2px;
+      }
+      .nav-btn {
+        font-family: "Cinzel", serif;
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 7px 16px;
+        border: 1px solid transparent;
+        background: none;
+        color: var(--text-muted);
+        cursor: pointer;
+        border-radius: 3px;
+        transition: all 0.2s;
+      }
+      .nav-btn:hover {
+        color: var(--text);
+        border-color: var(--border);
+      }
+      .nav-btn.active {
+        color: var(--gold);
+        border-color: var(--gold-dim);
+        background: rgba(201, 162, 39, 0.06);
+      }
+      .header-stats {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .stat-pill {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-family: "Cinzel", serif;
+      }
+      .stat-pill-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      .stat-pill-num {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .stat-pill-label {
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+        text-transform: uppercase;
+      }
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .tab-pane {
+        display: none;
+      }
+      .tab-pane.active {
+        display: block;
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 1.5rem;
+      }
+      .section-header h2 {
+        font-family: "Cinzel", serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--gold-light);
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+      }
+      .div-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to right, var(--gold-dim), transparent);
+      }
+      .div-gem {
+        width: 6px;
+        height: 6px;
+        background: var(--gold-dim);
+        transform: rotate(45deg);
+        flex-shrink: 0;
+      }
+      .scanner-layout {
+        display: grid;
+        grid-template-columns: 420px 1fr;
+        gap: 1.5rem;
+        align-items: start;
+      }
+      @media (max-width: 1060px) {
+        .scanner-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1.25rem;
+        position: relative;
+      }
+      .panel::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 12px;
+        height: 12px;
+        border-top: 1.5px solid var(--gold-dim);
+        border-left: 1.5px solid var(--gold-dim);
+        pointer-events: none;
+      }
+      .panel::after {
+        content: "";
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        width: 12px;
+        height: 12px;
+        border-bottom: 1.5px solid var(--gold-dim);
+        border-right: 1.5px solid var(--gold-dim);
+        pointer-events: none;
+      }
+      .panel-title {
+        font-family: "Cinzel", serif;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: var(--gold);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .drop-zone {
+        border: 1.5px dashed var(--border);
+        border-radius: 6px;
+        padding: 1.25rem 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        background: var(--surface);
+        min-height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .drop-zone:hover,
+      .drop-zone.drag-over {
+        border-color: var(--gold-dim);
+        background: rgba(201, 162, 39, 0.04);
+      }
+      .drop-zone-icon {
+        font-size: 22px;
+        opacity: 0.35;
+      }
+      .drop-zone p {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .drop-zone small {
+        font-size: 11px;
+        color: var(--text-dim);
+      }
+      kbd {
+        display: inline-block;
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        padding: 1px 6px;
+        color: var(--gold);
+        margin: 0 2px;
+      }
+      .crop-notice {
+        display: none;
+        align-items: center;
+        gap: 7px;
+        margin-top: 0.6rem;
+        padding: 5px 9px;
+        background: rgba(87, 204, 153, 0.07);
+        border: 1px solid rgba(87, 204, 153, 0.28);
+        border-radius: 4px;
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.07em;
+        color: #57cc99;
+      }
+      .crop-notice.show {
+        display: flex;
+      }
+      .crop-notice-icon {
+        font-size: 12px;
+        flex-shrink: 0;
+      }
+      .preview-wrap {
+        position: relative;
+        margin-top: 0.75rem;
+        display: none;
+      }
+      .preview-stack {
+        position: relative;
+        display: block;
+      }
+      #previewCanvas {
+        max-width: 100%;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+      }
+      #overlayCanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        pointer-events: none;
+      }
+      .preview-legend {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 9px;
+        color: var(--text-muted);
+        font-family: "Cinzel", serif;
+        letter-spacing: 0.06em;
+      }
+      .legend-dot {
+        width: 10px;
+        height: 3px;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .cfg-section {
+        margin-top: 0.8rem;
+      }
+      .cfg-section-title {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.2em;
+        color: var(--gold-dim);
+        text-transform: uppercase;
+        margin-bottom: 0.45rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .note {
+        font-size: 8px;
+        font-style: italic;
+        font-family: serif;
+        font-weight: normal;
+        letter-spacing: 0;
+        text-transform: none;
+        color: var(--text-dim);
+      }
+      .cfg-2col {
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr;
+        gap: 5px 10px;
+        align-items: center;
+      }
+      .cfg-label {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .cfg-field {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .cfg-field-label {
+        font-family: "Cinzel", serif;
+        font-size: 8px;
+        letter-spacing: 0.1em;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .cfg-input {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        color: var(--text);
+        font-family: "Crimson Pro", serif;
+        font-size: 14px;
+        padding: 4px 6px;
+        text-align: center;
+        width: 100%;
+        transition: border-color 0.15s;
+      }
+      .cfg-input:focus {
+        outline: none;
+        border-color: var(--gold-dim);
+      }
+      .cfg-input:hover {
+        border-color: #3a3a55;
+      }
+      .dir-grid {
+        display: grid;
+        grid-template-areas: ".. top .." "left center right" ".. bottom ..";
+        grid-template-columns: 80px 1fr 80px;
+        grid-template-rows: auto auto auto;
+        gap: 4px 6px;
+        align-items: center;
+      }
+      .dir-top {
+        grid-area: top;
+        display: flex;
+        justify-content: center;
+      }
+      .dir-left {
+        grid-area: left;
+      }
+      .dir-center {
+        grid-area: center;
+        background: rgba(100, 160, 255, 0.07);
+        border: 1px solid rgba(100, 160, 255, 0.2);
+        border-radius: 3px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        color: rgba(100, 160, 255, 0.4);
+        font-family: "Cinzel", serif;
+        letter-spacing: 0.1em;
+      }
+      .dir-center.green {
+        background: rgba(80, 200, 120, 0.07);
+        border-color: rgba(80, 200, 120, 0.25);
+        color: rgba(80, 200, 120, 0.5);
+      }
+      .dir-right {
+        grid-area: right;
+      }
+      .dir-bottom {
+        grid-area: bottom;
+        display: flex;
+        justify-content: center;
+      }
+      .row-offsets-wrap {
+        max-height: 160px;
+        overflow-y: auto;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        background: var(--surface);
+        margin-top: 0.4rem;
+      }
+      .row-offset-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 3px 8px;
+        border-bottom: 1px solid rgba(42, 42, 69, 0.5);
+      }
+      .row-offset-row:last-child {
+        border-bottom: none;
+      }
+      .row-offset-row:nth-child(even) {
+        background: rgba(255, 255, 255, 0.015);
+      }
+      .ro-label {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        color: var(--text-muted);
+        width: 46px;
+        flex-shrink: 0;
+      }
+      .ro-input {
+        flex: 1;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        color: var(--text);
+        font-family: "Crimson Pro", serif;
+        font-size: 13px;
+        padding: 3px 5px;
+        text-align: center;
+      }
+      .ro-input:focus {
+        outline: none;
+        border-color: var(--gold-dim);
+      }
+      .ro-note {
+        font-size: 9px;
+        color: var(--text-dim);
+        flex: 1;
+        font-style: italic;
+      }
+      .cfg-hint-box {
+        background: rgba(201, 162, 39, 0.04);
+        border: 1px solid rgba(201, 162, 39, 0.12);
+        border-radius: 4px;
+        padding: 6px 8px;
+        font-size: 10px;
+        color: var(--text-dim);
+        font-style: italic;
+        line-height: 1.55;
+        margin-top: 0.45rem;
+      }
+      .cfg-hint-box b {
+        color: var(--gold-dim);
+        font-style: normal;
+      }
+      .ref-status {
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        padding: 6px 10px;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+        border: 1px solid var(--border);
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .ref-status.ready {
+        border-color: rgba(87, 204, 153, 0.4);
+        color: #57cc99;
+      }
+      .ref-status.loading {
+        border-color: var(--gold-dim);
+        color: var(--gold);
+      }
+      .ref-status.warn {
+        border-color: rgba(204, 51, 51, 0.4);
+        color: #e07070;
+      }
+      .spinner-inline {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        border: 2px solid rgba(232, 197, 71, 0.3);
+        border-top-color: var(--gold-light);
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .progress-wrap {
+        margin: 0.75rem 0;
+        display: none;
+      }
+      .progress-track {
+        height: 3px;
+        background: var(--border);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(to right, var(--gold-dim), var(--gold));
+        border-radius: 2px;
+        transition: width 0.1s linear;
+        width: 0%;
+      }
+      .progress-label {
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        color: var(--text-muted);
+        letter-spacing: 0.08em;
+        margin-bottom: 5px;
+      }
+      .btn-row {
+        display: flex;
+        gap: 8px;
+        margin-top: 0.85rem;
+      }
+      .scan-btn {
+        flex: 1;
+        font-family: "Cinzel", serif;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        padding: 10px;
+        background: linear-gradient(135deg, #7a5f10, #9a7515);
+        color: var(--gold-light);
+        border: 1px solid var(--gold-dim);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .scan-btn:hover:not(:disabled) {
+        background: linear-gradient(135deg, #9a7515, #c9a227);
+        box-shadow: 0 0 18px rgba(201, 162, 39, 0.2);
+      }
+      .scan-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .ghost-btn {
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 10px 12px;
+        background: none;
+        color: var(--text-muted);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+      .ghost-btn:hover {
+        border-color: var(--gold-dim);
+        color: var(--text);
+      }
+      .results-grid {
+        display: grid;
+        gap: 5px;
+      }
+      .res-cell {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border-color 0.18s, transform 0.15s;
+        position: relative;
+      }
+      .res-cell:hover {
+        border-color: var(--gold-dim);
+        transform: scale(1.06);
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+      }
+      .res-cell.no-match {
+        border-color: rgba(204, 51, 51, 0.35);
+      }
+      .res-cell.has-cross {
+        border-color: rgba(204, 51, 51, 0.5);
+        opacity: 0.65;
+      }
+      .res-cell-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        padding: 3px 3px 2px;
+      }
+      .res-cell-imgs img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 2px;
+        display: block;
+        background: var(--card);
+      }
+      .res-cell-label {
+        padding: 2px 3px 4px;
+        text-align: center;
+        background: rgba(7, 7, 15, 0.7);
+      }
+      .res-cell-name {
+        font-family: "Cinzel", serif;
+        font-size: 7px;
+        font-weight: 600;
+        color: var(--text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+      }
+      .res-cell-conf {
+        font-size: 7px;
+        line-height: 1.2;
+        margin-top: 1px;
+      }
+      .res-cell-conf.good {
+        color: #57cc99;
+      }
+      .res-cell-conf.ok {
+        color: var(--gold);
+      }
+      .res-cell-conf.bad {
+        color: #e07070;
+      }
+      .results-actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+      }
+      .action-btn {
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 7px 14px;
+        border-radius: 3px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: var(--text-muted);
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .action-btn:hover {
+        border-color: var(--gold-dim);
+        color: var(--text);
+      }
+      .empty-results {
+        text-align: center;
+        padding: 2.5rem 1rem;
+        color: var(--text-dim);
+        font-style: italic;
+        font-size: 14px;
+      }
+      .modify-btn {
+        width: 100%;
+        margin-top: 0.75rem;
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 8px;
+        background: none;
+        color: var(--text-muted);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+      }
+      .modify-btn:hover {
+        border-color: var(--gold-dim);
+        color: var(--text);
+      }
+      .modify-btn .arr {
+        transition: transform 0.25s;
+        font-size: 10px;
+        line-height: 1;
+      }
+      .modify-btn.open {
+        border-color: var(--gold-dim);
+        color: var(--gold);
+      }
+      .modify-btn.open .arr {
+        transform: rotate(180deg);
+      }
+      .cfg-drawer {
+        display: none;
+        margin-top: 0.5rem;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 0.9rem 1rem;
+        background: var(--surface);
+      }
+      .cfg-drawer.open {
+        display: block;
+      }
+
+      /* ══ DRAFT POOL TWO-COLUMN ══ */
+      .draft-section {
+        margin-top: 1.5rem;
+      }
+      .draft-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0.85rem;
+      }
+      .draft-header-gem {
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        flex-shrink: 0;
+      }
+      .draft-header-title {
+        font-family: "Cinzel", serif;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .draft-header-line {
+        flex: 1;
+        height: 1px;
+      }
+      .draft-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      @media (max-width: 700px) {
+        .draft-cols {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Column headers */
+      .draft-col-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 10px;
+        border-radius: 5px 5px 0 0;
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .draft-col-head.green-head {
+        background: rgba(87, 204, 153, 0.1);
+        border: 1px solid rgba(87, 204, 153, 0.3);
+        border-bottom: none;
+        color: var(--green-spd);
+      }
+      .draft-col-head.red-head {
+        background: rgba(224, 112, 112, 0.1);
+        border: 1px solid rgba(224, 112, 112, 0.3);
+        border-bottom: none;
+        color: var(--red-spd);
+      }
+      .draft-col-head .spd-icon {
+        font-size: 14px;
+      }
+      .draft-col-count {
+        margin-left: auto;
+        font-size: 9px;
+        opacity: 0.6;
+        font-weight: 400;
+      }
+      .draft-col-body {
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+        border: 1px solid;
+        max-height: 520px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+      }
+      .draft-col-body.green-body {
+        border-color: rgba(87, 204, 153, 0.2);
+      }
+      .draft-col-body.red-body {
+        border-color: rgba(224, 112, 112, 0.2);
+      }
+      .draft-col-body::-webkit-scrollbar {
+        width: 4px;
+      }
+      .draft-col-body::-webkit-scrollbar-track {
+        background: var(--surface);
+      }
+      .draft-col-body::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 2px;
+      }
+
+      /* Divider rows for meta sections */
+      .draft-divider {
+        font-family: "Cinzel", serif;
+        font-size: 8px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        padding: 3px 8px;
+        background: rgba(0, 0, 0, 0.35);
+        color: var(--text-dim);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      .draft-divider .meta-badge {
+        font-size: 8px;
+        font-weight: 700;
+        padding: 1px 5px;
+        border-radius: 2px;
+        letter-spacing: 0.06em;
+      }
+      .meta-S {
+        background: rgba(255, 215, 0, 0.15);
+        color: #ffd700;
+        border: 1px solid rgba(255, 215, 0, 0.35);
+      }
+      .meta-Aplus {
+        background: rgba(232, 93, 4, 0.15);
+        color: #f07030;
+        border: 1px solid rgba(232, 93, 4, 0.35);
+      }
+      .meta-A {
+        background: rgba(201, 162, 39, 0.15);
+        color: var(--gold);
+        border: 1px solid rgba(201, 162, 39, 0.35);
+      }
+      .meta-offmeta {
+        background: rgba(138, 128, 112, 0.1);
+        color: var(--text-muted);
+        border: 1px solid rgba(138, 128, 112, 0.25);
+      }
+
+      /* Draft row per miscrit */
+      .draft-row {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 5px 8px;
+        border-bottom: 1px solid rgba(42, 42, 69, 0.45);
+        cursor: pointer;
+        transition: background 0.15s;
+        background: var(--surface);
+      }
+      .draft-row:last-child {
+        border-bottom: none;
+      }
+      .draft-row:nth-child(even) {
+        background: rgba(255, 255, 255, 0.012);
+      }
+      .draft-row:hover {
+        background: rgba(201, 162, 39, 0.05);
+      }
+      .draft-row-img {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+        border-radius: 3px;
+        overflow: hidden;
+        background: var(--card);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        opacity: 0.3;
+        border: 1px solid var(--border);
+      }
+      .draft-row-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+      }
+      .draft-row-info {
+        flex: 1;
+        min-width: 0;
+      }
+      .draft-row-name {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+      }
+      .draft-row-tags {
+        display: flex;
+        gap: 3px;
+        margin-top: 2px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .dr-type-chip {
+        font-family: "Cinzel", serif;
+        font-size: 6.5px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        padding: 1px 4px;
+        border-radius: 2px;
+      }
+      .dr-rar-chip {
+        font-family: "Cinzel", serif;
+        font-size: 6px;
+        font-weight: 700;
+        padding: 1px 3px;
+        border-radius: 2px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .draft-row-right {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2px;
+      }
+      .dr-spd-badge {
+        font-family: "Cinzel", serif;
+        font-size: 8px;
+        font-weight: 700;
+        padding: 2px 5px;
+        border-radius: 3px;
+        letter-spacing: 0.06em;
+      }
+      .dr-spd-badge.g {
+        background: rgba(87, 204, 153, 0.15);
+        color: var(--green-spd);
+        border: 1px solid rgba(87, 204, 153, 0.3);
+      }
+      .dr-spd-badge.r {
+        background: rgba(224, 112, 112, 0.15);
+        color: var(--red-spd);
+        border: 1px solid rgba(224, 112, 112, 0.3);
+      }
+      .dr-meta-chip {
+        font-size: 7px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        padding: 1px 4px;
+        border-radius: 2px;
+      }
+
+      .no-draft {
+        text-align: center;
+        padding: 1.5rem;
+        color: var(--text-dim);
+        font-style: italic;
+        font-size: 13px;
+      }
+
+      /* tome */
+      .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+      }
+      .search-wrap {
+        position: relative;
+        flex: 1;
+        min-width: 180px;
+        max-width: 280px;
+      }
+      .search-wrap svg {
+        position: absolute;
+        left: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.3;
+        pointer-events: none;
+      }
+      .search-input {
+        width: 100%;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        color: var(--text);
+        font-family: "Crimson Pro", serif;
+        font-size: 15px;
+        padding: 8px 10px 8px 34px;
+        transition: border-color 0.2s;
+      }
+      .search-input::placeholder {
+        color: var(--text-muted);
+      }
+      .search-input:focus {
+        outline: none;
+        border-color: var(--gold-dim);
+      }
+      .type-filters {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+      .type-btn {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: var(--text-muted);
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .type-btn:hover {
+        border-color: var(--gold-dim);
+      }
+      .type-btn.active {
+        border-color: currentColor;
+      }
+      .count-bar {
+        font-family: "Cinzel", serif;
+        font-size: 11px;
+        color: var(--text-muted);
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+      }
+      .count-bar b {
+        color: var(--gold);
+        font-weight: 600;
+      }
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+        gap: 10px;
+      }
+      .miscrit-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
+        position: relative;
+        overflow: hidden;
+        user-select: none;
+        animation: fadeUp 0.35s ease both;
+      }
+      .miscrit-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 50% 0%,
+          rgba(201, 162, 39, 0.07),
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.25s;
+        pointer-events: none;
+      }
+      .miscrit-card:hover {
+        border-color: var(--gold-dim);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      }
+      .miscrit-card:hover::before {
+        opacity: 1;
+      }
+      .miscrit-card:active {
+        transform: scale(0.97);
+      }
+      .card-img-wrap {
+        width: 100%;
+        aspect-ratio: 1;
+        background: var(--surface);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .card-img-ph {
+        font-size: 28px;
+        opacity: 0.15;
+      }
+      .card-name {
+        font-family: "Cinzel", serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--text);
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .type-badges {
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+      }
+      .type-badge {
+        display: inline-flex;
+        align-items: center;
+        font-family: "Cinzel", serif;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 2px 6px;
+        border-radius: 2px;
+      }
+      .speed-row {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 3px;
+      }
+      .speed-lbl {
+        font-size: 9px;
+        color: var(--text-muted);
+        font-family: "Cinzel", serif;
+        flex-shrink: 0;
+      }
+      .spd-track {
+        flex: 1;
+        height: 3px;
+        background: var(--border);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .spd-fill {
+        height: 100%;
+        border-radius: 2px;
+        background: linear-gradient(to right, var(--gold-dim), var(--gold));
+      }
+      .speed-val {
+        font-size: 9px;
+        color: var(--text-muted);
+        min-width: 18px;
+        text-align: right;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .modal-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 200;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+      .modal-backdrop.open {
+        display: flex;
+      }
+      .modal {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 420px;
+        position: relative;
+        animation: modalIn 0.22s ease;
+        overflow: hidden;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+      @keyframes modalIn {
+        from {
+          opacity: 0;
+          transform: scale(0.96) translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .modal-top-bar {
+        height: 4px;
+        width: 100%;
+      }
+      .modal-body {
+        padding: 1.5rem;
+      }
+      .modal-close {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 1;
+      }
+      .modal-close:hover {
+        color: var(--text);
+      }
+      .modal-img-wrap {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+        background: var(--surface);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .modal-name {
+        font-family: "Cinzel", serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: var(--gold-light);
+        margin-bottom: 0.5rem;
+      }
+      .modal-center {
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      .modal-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 1.25rem;
+      }
+      .stat-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .stat-name {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+        width: 62px;
+        flex-shrink: 0;
+        text-transform: uppercase;
+      }
+      .stat-pips {
+        display: flex;
+        gap: 3px;
+        flex: 1;
+      }
+      .stat-pip {
+        flex: 1;
+        height: 7px;
+        border-radius: 2px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+      }
+      .stat-pip.filled {
+        border-color: transparent;
+      }
+      .stat-val {
+        font-family: "Cinzel", serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        min-width: 16px;
+        text-align: right;
+      }
+      .stat-section-title {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.18em;
+        color: var(--gold-dim);
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+      .modal-desc {
+        font-style: italic;
+        font-size: 14px;
+        color: var(--text-muted);
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 1.7;
+        border-top: 1px solid var(--border);
+        padding-top: 1rem;
+      }
+      .modal-url {
+        display: block;
+        text-align: center;
+        margin-top: 0.75rem;
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.12em;
+        color: var(--gold-dim);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .modal-url:hover {
+        color: var(--gold);
+      }
+      .no-data {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: var(--text-muted);
+      }
+      .no-data h3 {
+        font-family: "Cinzel", serif;
+        font-size: 16px;
+        color: var(--gold-dim);
+        margin-bottom: 0.75rem;
+      }
+      .no-data p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .no-data code {
+        font-size: 12px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 2px 7px;
+        border-radius: 3px;
+        color: var(--gold);
+      }
+      .toast {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(16px);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 9px 18px;
+        font-size: 13px;
+        color: var(--text-muted);
+        opacity: 0;
+        transition: all 0.28s;
+        z-index: 400;
+        pointer-events: none;
+        white-space: nowrap;
+      }
+      .toast.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+      .toast.gold {
+        border-color: var(--gold-dim);
+        color: var(--gold);
+      }
+      .toast.red {
+        border-color: rgba(204, 51, 51, 0.5);
+        color: #e07070;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a class="logo" href="#">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+            <polygon
+              points="16,2 28,10 28,22 16,30 4,22 4,10"
+              fill="none"
+              stroke="#c9a227"
+              stroke-width="1.5"
+            />
+            <polygon
+              points="16,7 24,12 24,20 16,25 8,20 8,12"
+              fill="rgba(201,162,39,0.1)"
+              stroke="#c9a227"
+              stroke-width="0.8"
+            />
+            <circle cx="16" cy="16" r="2.5" fill="#c9a227" opacity="0.8" />
+          </svg>
+          <div class="logo-text">Miscrits Arena <span>Draft Oracle</span></div>
+        </a>
+        <nav>
+          <button class="nav-btn active" onclick="switchTab('scanner',this)">
+            🔍 Scanner
+          </button>
+          <button class="nav-btn" onclick="switchTab('tome',this)">
+            📖 Tome
+          </button>
+        </nav>
+        <div class="header-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-dot" style="background: #57cc99"></div>
+            <div>
+              <div class="stat-pill-num" id="statTotal">—</div>
+              <div class="stat-pill-label">Miscrits</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="tab-pane active" id="tab-scanner">
+        <div class="section-header">
+          <div class="div-gem"></div>
+          <h2>Image Scanner</h2>
+          <div class="div-line"></div>
+        </div>
+        <div class="scanner-layout">
+          <!-- LEFT PANEL: controls -->
+          <div class="panel">
+            <div class="panel-title">Upload Arena Grid</div>
+            <div class="ref-status loading" id="refStatus">
+              <span class="spinner-inline"></span> Loading reference images…
+            </div>
+            <div
+              class="drop-zone"
+              id="dropZone"
+              onclick="document.getElementById('fileInput').click()"
+            >
+              <div id="dzContent">
+                <div class="drop-zone-icon">🖼</div>
+                <p>Paste <kbd>Ctrl+V</kbd>, drag &amp; drop, or click</p>
+                <small>Screenshot from clipboard</small>
+              </div>
+            </div>
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*"
+              style="display: none"
+            />
+
+            <div class="crop-notice" id="cropNotice">
+              <span class="crop-notice-icon">✂</span>
+              <span id="cropNoticeText">Border detected and removed</span>
+            </div>
+
+            <div class="preview-wrap" id="previewWrap">
+              <div class="preview-stack">
+                <canvas id="previewCanvas"></canvas>
+                <canvas id="overlayCanvas"></canvas>
+              </div>
+              <div class="preview-legend">
+                <span class="legend-item"
+                  ><span
+                    class="legend-dot"
+                    style="background: rgba(100, 160, 255, 0.8)"
+                  ></span
+                  >Margin</span
+                >
+                <span class="legend-item"
+                  ><span
+                    class="legend-dot"
+                    style="background: rgba(255, 200, 0, 0.7)"
+                  ></span
+                  >Cell</span
+                >
+                <span class="legend-item"
+                  ><span
+                    class="legend-dot"
+                    style="background: rgba(80, 200, 120, 0.9)"
+                  ></span
+                  >Extract</span
+                >
+                <span class="legend-item"
+                  ><span
+                    class="legend-dot"
+                    style="background: rgba(255, 100, 100, 0.9)"
+                  ></span
+                  >Label</span
+                >
+                <span class="legend-item"
+                  ><span
+                    class="legend-dot"
+                    style="background: rgba(255, 150, 50, 0.9)"
+                  ></span
+                  >Row offset</span
+                >
+              </div>
+            </div>
+
+            <button class="modify-btn" id="modifyBtn" onclick="toggleModify()">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path
+                  d="M1 8.5L3.5 6 7.5 2 9 3.5 5 7.5 2.5 10Z"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="6.5"
+                  y1="3"
+                  x2="8.5"
+                  y2="5"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                />
+              </svg>
+              Modify Values
+              <span class="arr">▾</span>
+            </button>
+
+            <div class="cfg-drawer" id="cfgDrawer">
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <rect
+                      x="0"
+                      y="0"
+                      width="3.5"
+                      height="3.5"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="5.5"
+                      y="0"
+                      width="3.5"
+                      height="3.5"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="0"
+                      y="5.5"
+                      width="3.5"
+                      height="3.5"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="5.5"
+                      y="5.5"
+                      width="3.5"
+                      height="3.5"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  Grid Layout
+                </div>
+                <div class="cfg-2col">
+                  <span class="cfg-label">Cols</span>
+                  <input
+                    class="cfg-input"
+                    id="cfgCols"
+                    type="number"
+                    value="6"
+                    min="1"
+                    max="16"
+                    oninput="onCfgChange()"
+                  />
+                  <span class="cfg-label">Rows</span>
+                  <input
+                    class="cfg-input"
+                    id="cfgRows"
+                    type="number"
+                    value="4"
+                    min="1"
+                    max="16"
+                    oninput="onCfgChange()"
+                  />
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <rect
+                      x="1"
+                      y="1"
+                      width="7"
+                      height="7"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <rect
+                      x="3"
+                      y="3"
+                      width="3"
+                      height="3"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  Grid Margin <span class="note">(outer screenshot edges)</span>
+                </div>
+                <div class="dir-grid">
+                  <div class="dir-top">
+                    <div class="cfg-field" style="width: 68px">
+                      <div class="cfg-field-label">Top</div>
+                      <input
+                        class="cfg-input"
+                        id="mgTop"
+                        type="number"
+                        value="0"
+                        min="0"
+                        max="500"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-left">
+                    <div class="cfg-field">
+                      <div class="cfg-field-label">Left</div>
+                      <input
+                        class="cfg-input"
+                        id="mgLeft"
+                        type="number"
+                        value="1"
+                        min="0"
+                        max="500"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-center">GRID</div>
+                  <div class="dir-right">
+                    <div class="cfg-field">
+                      <div class="cfg-field-label">Right</div>
+                      <input
+                        class="cfg-input"
+                        id="mgRight"
+                        type="number"
+                        value="0"
+                        min="0"
+                        max="500"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-bottom">
+                    <div class="cfg-field" style="width: 68px">
+                      <div class="cfg-field-label">Bottom</div>
+                      <input
+                        class="cfg-input"
+                        id="mgBottom"
+                        type="number"
+                        value="0"
+                        min="0"
+                        max="500"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <line
+                      x1="4.5"
+                      y1="0"
+                      x2="4.5"
+                      y2="9"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                    <line
+                      x1="0"
+                      y1="4.5"
+                      x2="9"
+                      y2="4.5"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                  </svg>
+                  Cell Gap <span class="note">(dividers between cells)</span>
+                </div>
+                <div class="cfg-2col">
+                  <span class="cfg-label">H gap</span
+                  ><input
+                    class="cfg-input"
+                    id="gapH"
+                    type="number"
+                    value="0"
+                    min="0"
+                    max="40"
+                    oninput="onCfgChange()"
+                  />
+                  <span class="cfg-label">V gap</span
+                  ><input
+                    class="cfg-input"
+                    id="gapV"
+                    type="number"
+                    value="0"
+                    min="0"
+                    max="40"
+                    oninput="onCfgChange()"
+                  />
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <rect
+                      x="2"
+                      y="2"
+                      width="5"
+                      height="5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <rect
+                      x="0"
+                      y="0"
+                      width="9"
+                      height="9"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width=".5"
+                      stroke-dasharray="2,1"
+                    />
+                  </svg>
+                  Portrait Crop <span class="note">(cell frame / border)</span>
+                </div>
+                <div class="dir-grid">
+                  <div class="dir-top">
+                    <div class="cfg-field" style="width: 68px">
+                      <div class="cfg-field-label">Top px</div>
+                      <input
+                        class="cfg-input"
+                        id="cropTop"
+                        type="number"
+                        value="6"
+                        min="0"
+                        max="60"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-left">
+                    <div class="cfg-field">
+                      <div class="cfg-field-label">Left px</div>
+                      <input
+                        class="cfg-input"
+                        id="cropLeft"
+                        type="number"
+                        value="6"
+                        min="0"
+                        max="60"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-center green">PORTRAIT</div>
+                  <div class="dir-right">
+                    <div class="cfg-field">
+                      <div class="cfg-field-label">Right px</div>
+                      <input
+                        class="cfg-input"
+                        id="cropRight"
+                        type="number"
+                        value="6"
+                        min="0"
+                        max="60"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                  <div class="dir-bottom">
+                    <div class="cfg-field" style="width: 68px">
+                      <div class="cfg-field-label">Bottom px</div>
+                      <input
+                        class="cfg-input"
+                        id="cropBottom"
+                        type="number"
+                        value="6"
+                        min="0"
+                        max="60"
+                        oninput="onCfgChange()"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <rect
+                      x="0"
+                      y="5.5"
+                      width="9"
+                      height="3.5"
+                      fill="currentColor"
+                      opacity=".5"
+                    />
+                    <rect
+                      x="0"
+                      y="0"
+                      width="9"
+                      height="5.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width=".9"
+                    />
+                  </svg>
+                  Label Strip
+                  <span class="note">(name text at cell bottom)</span>
+                </div>
+                <div class="cfg-2col">
+                  <span class="cfg-label">Height %</span
+                  ><input
+                    class="cfg-input"
+                    id="labelPct"
+                    type="number"
+                    value="20"
+                    min="0"
+                    max="60"
+                    oninput="onCfgChange()"
+                  />
+                  <span class="cfg-label">+ Extra px</span
+                  ><input
+                    class="cfg-input"
+                    id="labelExtra"
+                    type="number"
+                    value="0"
+                    min="0"
+                    max="30"
+                    oninput="onCfgChange()"
+                  />
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <line
+                      x1="0"
+                      y1="1.5"
+                      x2="9"
+                      y2="1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <line
+                      x1="0"
+                      y1="4.5"
+                      x2="9"
+                      y2="4.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <line
+                      x1="0"
+                      y1="7.5"
+                      x2="9"
+                      y2="7.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  Row Y Offsets <span class="note">(shift rows up/down)</span>
+                </div>
+                <div class="row-offsets-wrap" id="rowOffsetsWrap"></div>
+                <div class="cfg-hint-box" style="margin-top: 0.4rem">
+                  <b>+</b> moves down, <b>−</b> moves up.
+                </div>
+              </div>
+              <div class="cfg-section">
+                <div class="cfg-section-title">
+                  <svg width="9" height="9" viewBox="0 0 9 9">
+                    <line
+                      x1="1.5"
+                      y1="0"
+                      x2="1.5"
+                      y2="9"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <line
+                      x1="4.5"
+                      y1="0"
+                      x2="4.5"
+                      y2="9"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <line
+                      x1="7.5"
+                      y1="0"
+                      x2="7.5"
+                      y2="9"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  Col X Offsets
+                  <span class="note">(shift columns left/right)</span>
+                </div>
+                <div class="row-offsets-wrap" id="colOffsetsWrap"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap" id="progressWrap">
+              <div class="progress-label" id="progressLabel">Matching…</div>
+              <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="ghost-btn" onclick="resetDefaults()">
+                ↺ Reset
+              </button>
+              <button
+                class="scan-btn"
+                id="scanBtn"
+                disabled
+                onclick="runScan()"
+              >
+                Identify Miscrits
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT PANEL: results -->
+          <div class="panel">
+            <div class="panel-title" id="resultsTitle">Results</div>
+            <div id="resultsContent">
+              <div class="empty-results">
+                Upload a grid image to begin identification
+              </div>
+            </div>
+            <div
+              class="results-actions"
+              id="resultsActions"
+              style="display: none"
+            >
+              <button
+                class="action-btn"
+                onclick="switchTab('tome',document.querySelectorAll('.nav-btn')[1])"
+              >
+                → Go to Tome
+              </button>
+            </div>
+
+            <!-- ══ DRAFT POOL SECTION ══ -->
+            <div id="draftPoolWrap" style="display: none">
+              <div class="draft-section">
+                <div class="draft-header">
+                  <div
+                    class="draft-header-gem"
+                    style="background: var(--green-spd)"
+                  ></div>
+                  <span
+                    class="draft-header-title"
+                    style="color: var(--green-spd)"
+                    >Green Speed</span
+                  >
+                  <div
+                    class="draft-header-line"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        rgba(87, 204, 153, 0.3),
+                        transparent
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="draft-header-gem"
+                    style="background: var(--red-spd)"
+                  ></div>
+                  <span class="draft-header-title" style="color: var(--red-spd)"
+                    >Red Speed</span
+                  >
+                  <div
+                    class="draft-header-line"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        rgba(224, 112, 112, 0.3),
+                        transparent
+                      );
+                    "
+                  ></div>
+                </div>
+                <div class="draft-cols">
+                  <div>
+                    <div class="draft-col-head green-head">
+                      <span class="spd-icon">⚡</span>
+                      Green Speed
+                      <span class="draft-col-count" id="greenCount">0</span>
+                    </div>
+                    <div
+                      class="draft-col-body green-body"
+                      id="greenColBody"
+                    ></div>
+                  </div>
+                  <div>
+                    <div class="draft-col-head red-head">
+                      <span class="spd-icon">🐢</span>
+                      Red Speed
+                      <span class="draft-col-count" id="redCount">0</span>
+                    </div>
+                    <div class="draft-col-body red-body" id="redColBody"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOME TAB -->
+      <div class="tab-pane" id="tab-tome">
+        <div class="section-header">
+          <div class="div-gem"></div>
+          <h2>Miscrit Tome</h2>
+          <div class="div-line"></div>
+        </div>
+        <div class="toolbar">
+          <div class="search-wrap">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+              <circle
+                cx="5.5"
+                cy="5.5"
+                r="4"
+                stroke="#e2d9c8"
+                stroke-width="1.5"
+              />
+              <line
+                x1="8.5"
+                y1="8.5"
+                x2="13"
+                y2="13"
+                stroke="#e2d9c8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input
+              class="search-input"
+              id="tomeSearch"
+              placeholder="Search miscrits…"
+              oninput="renderTome()"
+            />
+          </div>
+          <div class="type-filters" id="tomeTypeFilters"></div>
+        </div>
+        <div class="count-bar" id="tomeCount"></div>
+        <div id="tomeGrid"></div>
+      </div>
+    </main>
+
+    <!-- MODAL -->
+    <div
+      class="modal-backdrop"
+      id="modalBackdrop"
+      onclick="onBackdropClick(event)"
+    >
+      <div class="modal">
+        <div class="modal-top-bar" id="modalBar"></div>
+        <div class="modal-body">
+          <button class="modal-close" onclick="closeModal()">×</button>
+          <div class="modal-img-wrap"><img id="modalImg" src="" alt="" /></div>
+          <div class="modal-name" id="modalName"></div>
+          <div class="modal-center" id="modalBadge"></div>
+          <div class="modal-stats" id="modalStats"></div>
+          <div class="modal-desc" id="modalDesc"></div>
+          <a
+            class="modal-url"
+            id="modalUrl"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <canvas id="refCanvas" style="display: none"></canvas>
+    <canvas id="cellCanvas" style="display: none"></canvas>
+
+    <script>
+      // ═══════════════════════════════════════════════════════════
+      //  DATA & STATE
+      // ═══════════════════════════════════════════════════════════
+      let miscrits = [],
+        metaData = {},
+        tomeTypeFilter = "all",
+        uploadedImage = null,
+        scanResults = [],
+        refImageCache = {};
+      const HIST_SIZE = 96,
+        HUE_BINS = 32,
+        VAL_BINS = 8;
+
+      const TC = {
+        fire: {
+          bg: "rgba(232,93,4,0.15)",
+          color: "#f07030",
+          border: "rgba(232,93,4,0.45)",
+        },
+        water: {
+          bg: "rgba(0,150,199,0.15)",
+          color: "#40b0d8",
+          border: "rgba(0,150,199,0.45)",
+        },
+        earth: {
+          bg: "rgba(153,110,55,0.15)",
+          color: "#c8903a",
+          border: "rgba(153,110,55,0.45)",
+        },
+        wind: {
+          bg: "rgba(94,196,212,0.15)",
+          color: "#5ec4d4",
+          border: "rgba(94,196,212,0.45)",
+        },
+        electric: {
+          bg: "rgba(247,183,49,0.15)",
+          color: "#f7b731",
+          border: "rgba(247,183,49,0.45)",
+        },
+        nature: {
+          bg: "rgba(87,204,153,0.15)",
+          color: "#57cc99",
+          border: "rgba(87,204,153,0.45)",
+        },
+        shadow: {
+          bg: "rgba(155,93,229,0.15)",
+          color: "#b07de8",
+          border: "rgba(155,93,229,0.45)",
+        },
+        light: {
+          bg: "rgba(255,214,10,0.12)",
+          color: "#ffd60a",
+          border: "rgba(255,214,10,0.38)",
+        },
+        ice: {
+          bg: "rgba(168,218,220,0.12)",
+          color: "#a8dadc",
+          border: "rgba(168,218,220,0.38)",
+        },
+        normal: {
+          bg: "rgba(136,136,136,0.1)",
+          color: "#aaa",
+          border: "rgba(136,136,136,0.3)",
+        },
+      };
+      const ts = (t) => TC[(t || "normal").toLowerCase()] || TC.normal;
+
+      function splitTypes(s) {
+        if (!s) return ["Normal"];
+        return s
+          .replace(/([a-z])([A-Z])/g, "$1|$2")
+          .split("|")
+          .map((p) => p.trim())
+          .filter(Boolean);
+      }
+      function typeBadgesHTML(s) {
+        return splitTypes(s)
+          .map((p) => {
+            const t = ts(p);
+            return `<span class="type-badge" style="background:${t.bg};color:${t.color};border:1px solid ${t.border}">${p}</span>`;
+          })
+          .join("");
+      }
+
+      function rgbToHsv(r, g, b) {
+        r /= 255;
+        g /= 255;
+        b /= 255;
+        const mx = Math.max(r, g, b),
+          mn = Math.min(r, g, b),
+          d = mx - mn;
+        let h = 0,
+          s = mx === 0 ? 0 : d / mx,
+          v = mx;
+        if (d) {
+          if (mx === r) h = ((g - b) / d + 6) % 6;
+          else if (mx === g) h = (b - r) / d + 2;
+          else h = (r - g) / d + 4;
+          h *= 60;
+        }
+        return [h, s, v];
+      }
+      function buildHistogram(id) {
+        const d = id.data,
+          h = new Float32Array(HUE_BINS + VAL_BINS);
+        let n = 0;
+        for (let i = 0; i < d.length; i += 4) {
+          if (d[i + 3] < 48) continue;
+          const [hue, s, v] = rgbToHsv(d[i], d[i + 1], d[i + 2]);
+          if (s > 0.18 && v > 0.12)
+            h[Math.min(HUE_BINS - 1, ((hue / 360) * HUE_BINS) | 0)]++;
+          else h[HUE_BINS + Math.min(VAL_BINS - 1, (v * VAL_BINS) | 0)]++;
+          n++;
+        }
+        if (n) for (let i = 0; i < h.length; i++) h[i] /= n;
+        return h;
+      }
+      function histSim(a, b) {
+        let s = 0;
+        for (let i = 0; i < a.length; i++) s += Math.min(a[i], b[i]);
+        return s;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  META HELPERS
+      // ═══════════════════════════════════════════════════════════
+      const META_ORDER = { S: 0, "A+": 1, A: 2 };
+
+      function getMetaTier(name) {
+        if (!metaData || !metaData.miscrits) return null;
+        const entry = metaData.miscrits.find((m) => m.name === name);
+        return entry ? entry.meta_rarity : null;
+      }
+
+      function metaTierClass(tier) {
+        if (tier === "S") return "meta-S";
+        if (tier === "A+") return "meta-Aplus";
+        if (tier === "A") return "meta-A";
+        return "meta-offmeta";
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  WHITE / LIGHT BORDER AUTO-CROP
+      // ═══════════════════════════════════════════════════════════
+      async function autoRemoveBorder(srcImg) {
+        const LIGHT_THRESHOLD = 170,
+          MIN_BORDER_PX = 2,
+          MAX_BORDER_RATIO = 0.25;
+        const w = srcImg.width,
+          h = srcImg.height;
+        const tmpC = document.createElement("canvas");
+        tmpC.width = w;
+        tmpC.height = h;
+        const ctx = tmpC.getContext("2d");
+        ctx.drawImage(srcImg, 0, 0);
+        const data = ctx.getImageData(0, 0, w, h).data;
+        function pixelLight(x, y) {
+          const i = (y * w + x) * 4;
+          return (
+            data[i] >= LIGHT_THRESHOLD &&
+            data[i + 1] >= LIGHT_THRESHOLD &&
+            data[i + 2] >= LIGHT_THRESHOLD
+          );
+        }
+        function rowLight(y, x0, x1) {
+          for (let x = x0; x <= x1; x++) if (!pixelLight(x, y)) return false;
+          return true;
+        }
+        function colLight(x, y0, y1) {
+          for (let y = y0; y <= y1; y++) if (!pixelLight(x, y)) return false;
+          return true;
+        }
+        const maxT = Math.floor(h * MAX_BORDER_RATIO),
+          maxB = Math.floor(h * MAX_BORDER_RATIO),
+          maxL = Math.floor(w * MAX_BORDER_RATIO),
+          maxR = Math.floor(w * MAX_BORDER_RATIO);
+        let top = 0,
+          bottom = 0,
+          left = 0,
+          right = 0;
+        for (let y = 0; y < maxT; y++) {
+          if (rowLight(y, 0, w - 1)) top = y + 1;
+          else break;
+        }
+        for (let y = h - 1; y >= h - maxB; y--) {
+          if (rowLight(y, 0, w - 1)) bottom = h - 1 - y + 1;
+          else break;
+        }
+        for (let x = 0; x < maxL; x++) {
+          if (colLight(x, 0, h - 1)) left = x + 1;
+          else break;
+        }
+        for (let x = w - 1; x >= w - maxR; x--) {
+          if (colLight(x, 0, h - 1)) right = w - 1 - x + 1;
+          else break;
+        }
+        const cropped =
+          top >= MIN_BORDER_PX ||
+          bottom >= MIN_BORDER_PX ||
+          left >= MIN_BORDER_PX ||
+          right >= MIN_BORDER_PX;
+        if (!cropped)
+          return {
+            img: srcImg,
+            cropped: false,
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+          };
+        const cw = w - left - right,
+          ch = h - top - bottom;
+        const cropC = document.createElement("canvas");
+        cropC.width = cw;
+        cropC.height = ch;
+        cropC.getContext("2d").drawImage(tmpC, left, top, cw, ch, 0, 0, cw, ch);
+        const newImg = await new Promise((res) => {
+          const img = new Image();
+          img.onload = () => res(img);
+          img.src = cropC.toDataURL();
+        });
+        return { img: newImg, cropped: true, top, bottom, left, right };
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  RED X DETECTION
+      // ═══════════════════════════════════════════════════════════
+      function detectRedX(canvas) {
+        const ctx = canvas.getContext("2d"),
+          w = canvas.width,
+          h = canvas.height;
+        const d = ctx.getImageData(0, 0, w, h).data;
+        const bandThick = Math.max(4, Math.round(Math.min(w, h) * 0.18));
+        let onDiagRed = 0,
+          onDiagTotal = 0,
+          offDiagRed = 0,
+          offDiagTotal = 0;
+        for (let py = 0; py < h; py++) {
+          for (let px = 0; px < w; px++) {
+            const i = (py * w + px) * 4;
+            const r = d[i],
+              g = d[i + 1],
+              b = d[i + 2],
+              a = d[i + 3];
+            if (a < 48) continue;
+            const isRed =
+              r > 150 && g < 100 && b < 100 && r > g * 1.8 && r > b * 1.8;
+            const d1 = Math.abs(py - (px * h) / w);
+            const d2 = Math.abs(py - (h - 1 - (px * h) / w));
+            const onDiag = d1 < bandThick || d2 < bandThick;
+            if (onDiag) {
+              onDiagTotal++;
+              if (isRed) onDiagRed++;
+            } else {
+              offDiagTotal++;
+              if (isRed) offDiagRed++;
+            }
+          }
+        }
+        if (onDiagTotal === 0) return false;
+        const onRate = onDiagRed / onDiagTotal;
+        const offRate = offDiagTotal > 0 ? offDiagRed / offDiagTotal : 0;
+        return onRate > 0.1 && onRate > offRate * 2.2;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  CONFIG
+      // ═══════════════════════════════════════════════════════════
+      function iv(id) {
+        return parseInt(document.getElementById(id).value) || 0;
+      }
+      function getCfg() {
+        const cols = Math.max(
+          1,
+          parseInt(document.getElementById("cfgCols").value) || 6
+        );
+        const rows = Math.max(
+          1,
+          parseInt(document.getElementById("cfgRows").value) || 4
+        );
+        const rowOffsets = [];
+        for (let r = 0; r < rows; r++) {
+          const el = document.getElementById("ro_" + r);
+          rowOffsets.push(el ? parseInt(el.value) || 0 : 0);
+        }
+        const colOffsets = [];
+        for (let c = 0; c < cols; c++) {
+          const el = document.getElementById("co_" + c);
+          colOffsets.push(el ? parseInt(el.value) || 0 : 0);
+        }
+        return {
+          cols,
+          rows,
+          mgTop: iv("mgTop"),
+          mgBottom: iv("mgBottom"),
+          mgLeft: iv("mgLeft"),
+          mgRight: iv("mgRight"),
+          gapH: iv("gapH"),
+          gapV: iv("gapV"),
+          cropTop: iv("cropTop"),
+          cropBottom: iv("cropBottom"),
+          cropLeft: iv("cropLeft"),
+          cropRight: iv("cropRight"),
+          labelPct:
+            (parseInt(document.getElementById("labelPct").value) || 0) / 100,
+          labelExtra: iv("labelExtra"),
+          rowOffsets,
+          colOffsets,
+        };
+      }
+      function cellRect(cfg, col, row) {
+        const imgW = uploadedImage.width,
+          imgH = uploadedImage.height;
+        const gridX = cfg.mgLeft,
+          gridY = cfg.mgTop;
+        const gridW = imgW - cfg.mgLeft - cfg.mgRight,
+          gridH = imgH - cfg.mgTop - cfg.mgBottom;
+        const slotW = gridW / cfg.cols,
+          slotH = gridH / cfg.rows;
+        const rawX = gridX + col * slotW + (cfg.colOffsets[col] || 0);
+        const rawY = gridY + row * slotH + (cfg.rowOffsets[row] || 0);
+        const cellX = rawX + (col > 0 ? cfg.gapH / 2 : 0);
+        const cellY = rawY + (row > 0 ? cfg.gapV / 2 : 0);
+        const cellW =
+          slotW -
+          (col > 0 ? cfg.gapH / 2 : 0) -
+          (col < cfg.cols - 1 ? cfg.gapH / 2 : 0);
+        const cellH =
+          slotH -
+          (row > 0 ? cfg.gapV / 2 : 0) -
+          (row < cfg.rows - 1 ? cfg.gapV / 2 : 0);
+        const labelH = cellH * cfg.labelPct + cfg.labelExtra;
+        const px = cellX + cfg.cropLeft,
+          py = cellY + cfg.cropTop;
+        const pw = Math.max(1, cellW - cfg.cropLeft - cfg.cropRight);
+        const ph = Math.max(1, cellH - cfg.cropTop - cfg.cropBottom - labelH);
+        const lx = cellX + cfg.cropLeft,
+          ly = cellY + cellH - labelH;
+        const lw = Math.max(1, cellW - cfg.cropLeft - cfg.cropRight),
+          lh = labelH;
+        return { cellX, cellY, cellW, cellH, px, py, pw, ph, lx, ly, lw, lh };
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  OFFSET TABLES
+      // ═══════════════════════════════════════════════════════════
+      function rebuildOffsetTables() {
+        const cols = Math.max(
+          1,
+          parseInt(document.getElementById("cfgCols").value) || 6
+        );
+        const rows = Math.max(
+          1,
+          parseInt(document.getElementById("cfgRows").value) || 4
+        );
+        const oldRowVals = {},
+          oldColVals = {};
+        for (let r = 0; r < 20; r++) {
+          const el = document.getElementById("ro_" + r);
+          if (el) oldRowVals[r] = el.value;
+        }
+        for (let c = 0; c < 20; c++) {
+          const el = document.getElementById("co_" + c);
+          if (el) oldColVals[c] = el.value;
+        }
+        document.getElementById("rowOffsetsWrap").innerHTML = Array.from(
+          { length: rows },
+          (_, r) => `
+          <div class="row-offset-row"><span class="ro-label">Row ${r + 1}</span>
+          <input class="ro-input" id="ro_${r}" type="number" value="${
+            oldRowVals[r] !== undefined
+              ? oldRowVals[r]
+              : DEF_ROW_OFFSETS[r] ?? 0
+          }" min="-200" max="200" oninput="redrawOverlay()"/>
+          <span class="ro-note">${r === 0 ? "← start here for top row" : ""}${
+            r === rows - 1 ? "← bottom row" : ""
+          }</span></div>`
+        ).join("");
+        document.getElementById("colOffsetsWrap").innerHTML = Array.from(
+          { length: cols },
+          (_, c) => `
+          <div class="row-offset-row"><span class="ro-label">Col ${c + 1}</span>
+          <input class="ro-input" id="co_${c}" type="number" value="${
+            oldColVals[c] !== undefined
+              ? oldColVals[c]
+              : DEF_COL_OFFSETS[c] ?? 0
+          }" min="-200" max="200" oninput="redrawOverlay()"/>
+          <span class="ro-note"></span></div>`
+        ).join("");
+      }
+      function toggleModify() {
+        const btn = document.getElementById("modifyBtn"),
+          drawer = document.getElementById("cfgDrawer");
+        const open = drawer.classList.toggle("open");
+        btn.classList.toggle("open", open);
+      }
+      function onCfgChange() {
+        rebuildOffsetTables();
+        redrawOverlay();
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  OVERLAY
+      // ═══════════════════════════════════════════════════════════
+      function redrawOverlay() {
+        if (!uploadedImage) return;
+        const oc = document.getElementById("overlayCanvas"),
+          ctx = oc.getContext("2d");
+        ctx.clearRect(0, 0, oc.width, oc.height);
+        const cfg = getCfg(),
+          sx = oc.width / uploadedImage.width,
+          sy = oc.height / uploadedImage.height;
+        const imgW = uploadedImage.width,
+          imgH = uploadedImage.height;
+        ctx.strokeStyle = "rgba(100,160,255,0.45)";
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 3]);
+        ctx.strokeRect(
+          cfg.mgLeft * sx,
+          cfg.mgTop * sy,
+          (imgW - cfg.mgLeft - cfg.mgRight) * sx,
+          (imgH - cfg.mgTop - cfg.mgBottom) * sy
+        );
+        ctx.setLineDash([]);
+        const gridY = cfg.mgTop,
+          gridH = imgH - cfg.mgTop - cfg.mgBottom,
+          slotH = gridH / cfg.rows;
+        for (let r = 0; r < cfg.rows; r++) {
+          const baseY = gridY + r * slotH,
+            off = cfg.rowOffsets[r] || 0;
+          if (off !== 0) {
+            ctx.strokeStyle = "rgba(255,150,50,0.7)";
+            ctx.lineWidth = 1;
+            ctx.setLineDash([3, 2]);
+            ctx.beginPath();
+            ctx.moveTo(cfg.mgLeft * sx, baseY * sy);
+            ctx.lineTo((imgW - cfg.mgRight) * sx, baseY * sy);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.strokeStyle = "rgba(255,150,50,0.9)";
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cfg.mgLeft * sx, (baseY + off) * sy);
+            ctx.lineTo((imgW - cfg.mgRight) * sx, (baseY + off) * sy);
+            ctx.stroke();
+          }
+        }
+        for (let row = 0; row < cfg.rows; row++) {
+          for (let col = 0; col < cfg.cols; col++) {
+            const r = cellRect(cfg, col, row);
+            ctx.strokeStyle = "rgba(255,200,0,0.35)";
+            ctx.lineWidth = 1;
+            ctx.setLineDash([2, 2]);
+            ctx.strokeRect(
+              r.cellX * sx,
+              r.cellY * sy,
+              r.cellW * sx,
+              r.cellH * sy
+            );
+            ctx.setLineDash([]);
+            if (r.pw > 0 && r.ph > 0) {
+              ctx.fillStyle = "rgba(80,200,120,0.1)";
+              ctx.fillRect(r.px * sx, r.py * sy, r.pw * sx, r.ph * sy);
+              ctx.strokeStyle = "rgba(80,200,120,0.8)";
+              ctx.lineWidth = 1.5;
+              ctx.strokeRect(r.px * sx, r.py * sy, r.pw * sx, r.ph * sy);
+            }
+            if (r.lw > 0 && r.lh > 1) {
+              ctx.fillStyle = "rgba(255,80,80,0.17)";
+              ctx.fillRect(r.lx * sx, r.ly * sy, r.lw * sx, r.lh * sy);
+              ctx.strokeStyle = "rgba(255,100,100,0.6)";
+              ctx.lineWidth = 1;
+              ctx.strokeRect(r.lx * sx, r.ly * sy, r.lw * sx, r.lh * sy);
+            }
+          }
+        }
+      }
+      function drawCellToCanvas(cfg, col, row, outW, outH) {
+        const r = cellRect(cfg, col, row),
+          cc = document.getElementById("cellCanvas");
+        cc.width = outW;
+        cc.height = outH;
+        const ctx = cc.getContext("2d");
+        ctx.clearRect(0, 0, outW, outH);
+        ctx.drawImage(uploadedImage, r.px, r.py, r.pw, r.ph, 0, 0, outW, outH);
+        return cc;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  INIT
+      // ═══════════════════════════════════════════════════════════
+      async function init() {
+        rebuildOffsetTables();
+        try {
+          const [mRes, metaRes] = await Promise.all([
+            fetch("miscrits_updated.json"),
+            fetch("meta.json").catch(() => null),
+          ]);
+          if (!mRes.ok) throw new Error();
+          miscrits = await mRes.json();
+          if (metaRes && metaRes.ok) {
+            metaData = await metaRes.json();
+          }
+          buildTypeFilters();
+          renderTome();
+          updateStats();
+          await preloadRefImages();
+          toast("Tome loaded — " + miscrits.length + " miscrits", "gold");
+        } catch (e) {
+          document.getElementById(
+            "tomeGrid"
+          ).innerHTML = `<div class="no-data"><h3>miscrits_updated.json not found</h3><p>Place <code>miscrits_updated.json</code> in the same folder and serve via<br><code>python -m http.server</code></p></div>`;
+          document.getElementById("refStatus").className = "ref-status warn";
+          document.getElementById("refStatus").textContent =
+            "✗ miscrits_updated.json not found";
+        }
+      }
+
+      async function preloadRefImages() {
+        const rc = document.getElementById("refCanvas"),
+          rctx = rc.getContext("2d");
+        rc.width = HIST_SIZE;
+        rc.height = HIST_SIZE;
+        const matchable = miscrits.filter(
+          (m) => m.image_random_arena || m.image
+        );
+        const total = matchable.length;
+        let loaded = 0;
+        const sEl = document.getElementById("refStatus");
+        sEl.className = "ref-status loading";
+        const tick = () =>
+          (sEl.innerHTML = `<span class="spinner-inline"></span> Loading ${loaded}/${total}…`);
+        tick();
+        const loadOne = (m) =>
+          new Promise((res) => {
+            const primary = m.image_random_arena || m.image,
+              fallback = primary !== m.image ? m.image : null;
+            const tryUrl = (url, next) => {
+              if (!url) {
+                loaded++;
+                tick();
+                res();
+                return;
+              }
+              const img = new Image();
+              img.crossOrigin = "anonymous";
+              img.onload = () => {
+                rctx.clearRect(0, 0, HIST_SIZE, HIST_SIZE);
+                rctx.drawImage(img, 0, 0, HIST_SIZE, HIST_SIZE);
+                try {
+                  refImageCache[m.name] = {
+                    hist: buildHistogram(
+                      rctx.getImageData(0, 0, HIST_SIZE, HIST_SIZE)
+                    ),
+                    arenaSrc: url,
+                  };
+                } catch (_) {}
+                loaded++;
+                tick();
+                res();
+              };
+              img.onerror = () => tryUrl(next, null);
+              img.src = url;
+            };
+            tryUrl(primary, fallback);
+          });
+        for (let i = 0; i < matchable.length; i += 30)
+          await Promise.all(matchable.slice(i, i + 30).map(loadOne));
+        const n = Object.keys(refImageCache).length;
+        sEl.className = n ? "ref-status ready" : "ref-status warn";
+        sEl.textContent = n
+          ? `✓ ${n}/${total} reference images ready`
+          : "✗ No reference images loaded";
+        if (n && uploadedImage)
+          document.getElementById("scanBtn").disabled = false;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  FILE INPUT
+      // ═══════════════════════════════════════════════════════════
+      const fileInput = document.getElementById("fileInput"),
+        dropZone = document.getElementById("dropZone");
+      fileInput.addEventListener("change", (e) => {
+        if (e.target.files[0]) loadImage(e.target.files[0]);
+      });
+      dropZone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropZone.classList.add("drag-over");
+      });
+      dropZone.addEventListener("dragleave", () =>
+        dropZone.classList.remove("drag-over")
+      );
+      dropZone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropZone.classList.remove("drag-over");
+        if (e.dataTransfer.files[0]) loadImage(e.dataTransfer.files[0]);
+      });
+      document.addEventListener("paste", (e) => {
+        const items = (e.clipboardData || e.originalEvent.clipboardData).items;
+        for (const item of items) {
+          if (item.type.startsWith("image/")) {
+            const f = item.getAsFile();
+            if (f) {
+              loadImage(f);
+              toast("Image pasted", "gold");
+            }
+            break;
+          }
+        }
+      });
+
+      async function loadImage(file) {
+        const reader = new FileReader();
+        reader.onload = async (ev) => {
+          const rawImg = await new Promise((res) => {
+            const i = new Image();
+            i.onload = () => res(i);
+            i.src = ev.target.result;
+          });
+          const { img, cropped, top, bottom, left, right } =
+            await autoRemoveBorder(rawImg);
+          const notice = document.getElementById("cropNotice");
+          if (cropped) {
+            const parts = [];
+            if (top) parts.push(`top ${top}px`);
+            if (bottom) parts.push(`btm ${bottom}px`);
+            if (left) parts.push(`left ${left}px`);
+            if (right) parts.push(`right ${right}px`);
+            document.getElementById(
+              "cropNoticeText"
+            ).textContent = `✂ Light border removed (${parts.join(", ")})`;
+            notice.classList.add("show");
+          } else notice.classList.remove("show");
+          uploadedImage = img;
+          const pw = document.getElementById("previewWrap"),
+            pc = document.getElementById("previewCanvas"),
+            oc = document.getElementById("overlayCanvas");
+          const maxW = pw.parentElement.clientWidth - 40,
+            scale = Math.min(1, maxW / img.width);
+          pc.width = img.width * scale;
+          pc.height = img.height * scale;
+          oc.width = pc.width;
+          oc.height = pc.height;
+          pc.getContext("2d").drawImage(img, 0, 0, pc.width, pc.height);
+          pw.style.display = "block";
+          document.getElementById("dzContent").style.display = "none";
+          redrawOverlay();
+          if (Object.keys(refImageCache).length > 0)
+            document.getElementById("scanBtn").disabled = false;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  RESET
+      // ═══════════════════════════════════════════════════════════
+      const DEFS = {
+        cfgCols: 6,
+        cfgRows: 4,
+        mgTop: 0,
+        mgBottom: 0,
+        mgLeft: 1,
+        mgRight: 0,
+        gapH: 0,
+        gapV: 0,
+        cropTop: 6,
+        cropBottom: 6,
+        cropLeft: 6,
+        cropRight: 6,
+        labelPct: 20,
+        labelExtra: 0,
+      };
+      const DEF_ROW_OFFSETS = [25, 16, 0, 0];
+      const DEF_COL_OFFSETS = [8, 0, 0, 0, 0, 0];
+      function resetDefaults() {
+        Object.entries(DEFS).forEach(([k, v]) => {
+          const el = document.getElementById(k);
+          if (el) el.value = v;
+        });
+        rebuildOffsetTables();
+        for (let r = 0; r < 20; r++) {
+          const el = document.getElementById("ro_" + r);
+          if (el) el.value = DEF_ROW_OFFSETS[r] ?? 0;
+        }
+        for (let c = 0; c < 20; c++) {
+          const el = document.getElementById("co_" + c);
+          if (el) el.value = DEF_COL_OFFSETS[c] ?? 0;
+        }
+        redrawOverlay();
+        toast("Reset to defaults");
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  SCAN
+      // ═══════════════════════════════════════════════════════════
+      async function runScan() {
+        if (!uploadedImage) return;
+        const refEntries = Object.entries(refImageCache);
+        if (!refEntries.length) {
+          toast("Reference images not loaded", "red");
+          return;
+        }
+        const cfg = getCfg(),
+          total = cfg.cols * cfg.rows;
+        const btn = document.getElementById("scanBtn");
+        btn.disabled = true;
+        btn.innerHTML =
+          '<span style="display:inline-block;width:11px;height:11px;border:2px solid rgba(232,197,71,.3);border-top-color:#e8c547;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:5px"></span>Scanning…';
+        const pw = document.getElementById("progressWrap"),
+          pf = document.getElementById("progressFill"),
+          pl = document.getElementById("progressLabel");
+        pw.style.display = "block";
+        scanResults = [];
+        for (let row = 0; row < cfg.rows; row++) {
+          await new Promise((r) => setTimeout(r, 0));
+          for (let col = 0; col < cfg.cols; col++) {
+            const idx = row * cfg.cols + col;
+            pl.textContent = `Cell ${idx + 1}/${total}…`;
+            pf.style.width = (idx / total) * 100 + "%";
+            const xCanvas = drawCellToCanvas(
+              cfg,
+              col,
+              row,
+              HIST_SIZE,
+              HIST_SIZE
+            );
+            const hasCross = detectRedX(xCanvas);
+            const histCC = drawCellToCanvas(
+              cfg,
+              col,
+              row,
+              HIST_SIZE,
+              HIST_SIZE
+            );
+            const cellHist = buildHistogram(
+              histCC.getContext("2d").getImageData(0, 0, HIST_SIZE, HIST_SIZE)
+            );
+            const dispCC = drawCellToCanvas(cfg, col, row, 110, 110);
+            const cellDataURL = dispCC.toDataURL();
+            let bestName = null,
+              bestSim = 0,
+              bestSrc = null;
+            for (const [name, ref] of refEntries) {
+              const s = histSim(cellHist, ref.hist);
+              if (s > bestSim) {
+                bestSim = s;
+                bestName = name;
+                bestSrc = ref.arenaSrc;
+              }
+            }
+            const confidence = Math.max(
+              0,
+              Math.min(100, Math.round(((bestSim - 0.2) / 0.45) * 100))
+            );
+            const miscrit = miscrits.find((m) => m.name === bestName);
+            scanResults.push({
+              miscrit,
+              confidence,
+              sim: bestSim,
+              cellDataURL,
+              arenaSrc: bestSrc,
+              col,
+              row,
+              hasCross,
+            });
+          }
+        }
+        pf.style.width = "100%";
+        pl.textContent = "Done!";
+        setTimeout(() => {
+          pw.style.display = "none";
+        }, 800);
+        renderScanResults(cfg.cols, cfg.rows);
+        btn.disabled = false;
+        btn.innerHTML = "Identify Miscrits";
+      }
+
+      function renderScanResults(cols, rows) {
+        const title = document.getElementById("resultsTitle"),
+          content = document.getElementById("resultsContent"),
+          actions = document.getElementById("resultsActions");
+        const matched = scanResults.filter((r) => r.confidence >= 40).length;
+        title.textContent = `Results — ${matched}/${scanResults.length} identified`;
+        if (!scanResults.length) {
+          content.innerHTML = '<div class="empty-results">No results</div>';
+          actions.style.display = "none";
+          return;
+        }
+        const cells = scanResults
+          .map((r) => {
+            const cc =
+              r.confidence >= 70 ? "good" : r.confidence >= 40 ? "ok" : "bad";
+            const name = r.miscrit ? r.miscrit.name : "?";
+            const safe = name.replace(/'/g, "\\'");
+            const cls = [
+              r.confidence < 40 ? "no-match" : "",
+              r.hasCross ? "has-cross" : "",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            const refImg = r.arenaSrc
+              ? `<img src="${r.arenaSrc}" alt="${name}" loading="lazy">`
+              : `<div style="background:var(--card);width:100%;aspect-ratio:1;border-radius:2px"></div>`;
+            const crossNote = r.hasCross
+              ? ' <span style="color:#e07070;font-size:7px">✕ crossed</span>'
+              : "";
+            return `<div class="res-cell ${cls}" onclick="scanCellClick('${safe}',${
+              r.confidence
+            })" title="${name} — ${r.confidence}%${
+              r.hasCross ? " (crossed out)" : ""
+            }">
+            <div class="res-cell-imgs"><img src="${
+              r.cellDataURL
+            }" alt="cell">${refImg}</div>
+            <div class="res-cell-label"><div class="res-cell-name">${name}</div><div class="res-cell-conf ${cc}">${
+              r.confidence
+            }%${crossNote}</div></div>
+          </div>`;
+          })
+          .join("");
+        content.innerHTML = `<div class="results-grid" style="grid-template-columns:repeat(${cols},1fr)">${cells}</div>`;
+        actions.style.display = "flex";
+
+        const available = scanResults
+          .filter((r) => r.confidence >= 40 && r.miscrit && !r.hasCross)
+          .map((r) => r.miscrit);
+        renderDraftPool(available);
+      }
+
+      function scanCellClick(name, conf) {
+        if (name === "?" || conf < 30) return;
+        if (miscrits.find((x) => x.name === name)) openModal(name);
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  DRAFT POOL: TWO-COLUMN GREEN / RED SPEED
+      // ═══════════════════════════════════════════════════════════
+
+      const RARITY_ORDER = {
+        legendary: 0,
+        exotic: 1,
+        epic: 2,
+        rare: 3,
+        common: 4,
+      };
+      const RARITY_STYLES = {
+        legendary: {
+          label: "Legendary",
+          color: "#c9a227",
+          bg: "rgba(201,162,39,0.15)",
+          border: "rgba(201,162,39,0.4)",
+        },
+        exotic: {
+          label: "Exotic",
+          color: "#b07de8",
+          bg: "rgba(176,125,232,0.15)",
+          border: "rgba(176,125,232,0.4)",
+        },
+        epic: {
+          label: "Epic",
+          color: "#4caf82",
+          bg: "rgba(76,175,130,0.15)",
+          border: "rgba(76,175,130,0.4)",
+        },
+        rare: {
+          label: "Rare",
+          color: "#40b0d8",
+          bg: "rgba(64,176,216,0.12)",
+          border: "rgba(64,176,216,0.35)",
+        },
+        common: {
+          label: "Common",
+          color: "#8a8070",
+          bg: "rgba(138,128,112,0.1)",
+          border: "rgba(138,128,112,0.3)",
+        },
+      };
+
+      function sortDraftPool(pool) {
+        // Priority: meta tier (S=0, A+=1, A=2, none=3) then rarity then attack score
+        return [...pool].sort((a, b) => {
+          const ta = getMetaTier(a.name),
+            tb = getMetaTier(b.name);
+          const ma = ta !== null ? META_ORDER[ta] ?? 3 : 3;
+          const mb = tb !== null ? META_ORDER[tb] ?? 3 : 3;
+          if (ma !== mb) return ma - mb;
+          // same meta bucket — sort by rarity
+          const ra = RARITY_ORDER[(a.rarity || "common").toLowerCase()] ?? 4;
+          const rb = RARITY_ORDER[(b.rarity || "common").toLowerCase()] ?? 4;
+          if (ra !== rb) return ra - rb;
+          // same rarity — sort by best attack stat
+          const aa = Math.max(a.physical_attack || 0, a.elemental_attack || 0);
+          const ab = Math.max(b.physical_attack || 0, b.elemental_attack || 0);
+          return ab - aa;
+        });
+      }
+
+      function buildDraftColumn(pool) {
+        if (!pool.length) return '<div class="no-draft">None identified</div>';
+
+        // Group into sections: S, A+, A, then off-meta (by rarity groups)
+        const sections = [];
+        const metaTiers = ["S", "A+", "A"];
+        const tierLabels = { S: "S-Tier", "A+": "A+ Tier", A: "A Tier" };
+        const usedNames = new Set();
+
+        metaTiers.forEach((tier) => {
+          const group = pool.filter((m) => getMetaTier(m.name) === tier);
+          if (group.length) {
+            sections.push({ label: tierLabels[tier], tier, items: group });
+            group.forEach((m) => usedNames.add(m.name));
+          }
+        });
+
+        const offMeta = pool.filter((m) => !usedNames.has(m.name));
+        if (offMeta.length) {
+          sections.push({ label: "Off-Meta", tier: null, items: offMeta });
+        }
+
+        return sections
+          .map((sec) => {
+            const badgeClass = sec.tier
+              ? metaTierClass(sec.tier)
+              : "meta-offmeta";
+            const badge = sec.tier
+              ? `<span class="meta-badge ${badgeClass}">${sec.tier}</span>`
+              : `<span class="meta-badge meta-offmeta">—</span>`;
+            const divider = `<div class="draft-divider">${badge}${sec.label}</div>`;
+            const rows = sec.items.map((m) => draftRowHTML(m)).join("");
+            return divider + rows;
+          })
+          .join("");
+      }
+
+      function draftRowHTML(m) {
+        const safe = m.name.replace(/'/g, "\\'");
+        const src = m.image_random_arena || m.image || "";
+        const imgEl = src
+          ? `<img src="${src}" alt="${m.name}" loading="lazy" onerror="this.style.display='none'">`
+          : "?";
+
+        const rarKey = (m.rarity || "common").toLowerCase();
+        const rarStyle = RARITY_STYLES[rarKey] || RARITY_STYLES.common;
+
+        const typeChips = splitTypes(m.type)
+          .map((t) => {
+            const c = ts(t);
+            return `<span class="dr-type-chip" style="background:${c.bg};color:${c.color};border:1px solid ${c.border}">${t}</span>`;
+          })
+          .join("");
+
+        const rarChip = `<span class="dr-rar-chip" style="color:${rarStyle.color};background:${rarStyle.bg};border:1px solid ${rarStyle.border}">${rarStyle.label}</span>`;
+
+        const spd = m.speed || 0;
+        const spdClass = spd >= 3 ? "g" : "r";
+        const spdBadge = `<span class="dr-spd-badge ${spdClass}">SPD ${spd}</span>`;
+
+        const tier = getMetaTier(m.name);
+        const metaChip = tier
+          ? `<span class="dr-meta-chip ${metaTierClass(tier)}">${tier}</span>`
+          : "";
+
+        return `<div class="draft-row" onclick="openModal('${safe}')">
+          <div class="draft-row-img">${imgEl}</div>
+          <div class="draft-row-info">
+            <div class="draft-row-name">${m.name}</div>
+            <div class="draft-row-tags">${rarChip}${typeChips}</div>
+          </div>
+          <div class="draft-row-right">
+            ${spdBadge}
+            ${metaChip}
+          </div>
+        </div>`;
+      }
+
+      function renderDraftPool(pool) {
+        const wrap = document.getElementById("draftPoolWrap");
+        const greenBody = document.getElementById("greenColBody");
+        const redBody = document.getElementById("redColBody");
+        const greenCount = document.getElementById("greenCount");
+        const redCount = document.getElementById("redCount");
+
+        if (!pool.length) {
+          wrap.style.display = "none";
+          return;
+        }
+
+        const greenPool = sortDraftPool(
+          pool.filter((m) => (m.speed || 0) >= 3)
+        );
+        const redPool = sortDraftPool(
+          pool.filter((m) => (m.speed || 0) >= 1 && (m.speed || 0) <= 2)
+        );
+        const noSpd = sortDraftPool(pool.filter((m) => !m.speed));
+
+        greenCount.textContent = greenPool.length + " miscrits";
+        redCount.textContent = redPool.length + noSpd.length + " miscrits";
+
+        greenBody.innerHTML = buildDraftColumn(greenPool);
+        redBody.innerHTML = buildDraftColumn([...redPool, ...noSpd]);
+        wrap.style.display = "block";
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  TABS & FILTERS
+      // ═══════════════════════════════════════════════════════════
+      function switchTab(tab, btn) {
+        document
+          .querySelectorAll(".tab-pane")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".nav-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("tab-" + tab).classList.add("active");
+        btn.classList.add("active");
+      }
+      function buildTypeFilters() {
+        const at = new Set();
+        miscrits.forEach((m) =>
+          splitTypes(m.type).forEach((t) => at.add(t.toLowerCase()))
+        );
+        const types = ["all", ...[...at].sort()];
+        document.getElementById("tomeTypeFilters").innerHTML = types
+          .map((t) => {
+            const c = t === "all" ? "var(--text-muted)" : ts(t).color;
+            return `<button class="type-btn${
+              t === "all" ? " active" : ""
+            }" data-type="${t}" style="color:${c}" onclick="setTT(this)">${
+              t[0].toUpperCase() + t.slice(1)
+            }</button>`;
+          })
+          .join("");
+      }
+      function setTT(b) {
+        document
+          .querySelectorAll("#tomeTypeFilters .type-btn")
+          .forEach((x) => x.classList.remove("active"));
+        b.classList.add("active");
+        tomeTypeFilter = b.dataset.type;
+        renderTome();
+      }
+      function renderTome() {
+        const q = document.getElementById("tomeSearch").value.toLowerCase();
+        const list = miscrits.filter((m) => {
+          if (
+            tomeTypeFilter !== "all" &&
+            !splitTypes(m.type)
+              .map((t) => t.toLowerCase())
+              .includes(tomeTypeFilter)
+          )
+            return false;
+          return !q || m.name.toLowerCase().includes(q);
+        });
+        document.getElementById(
+          "tomeCount"
+        ).innerHTML = `<b>${list.length}</b> of ${miscrits.length} miscrits`;
+        document.getElementById("tomeGrid").innerHTML = list.length
+          ? `<div class="cards-grid">${list
+              .map((m, i) => cardHTML(m, i))
+              .join("")}</div>`
+          : '<div class="no-data" style="padding:2rem"><p>No miscrits match.</p></div>';
+      }
+      function cardHTML(m, idx) {
+        const parts = splitTypes(m.type),
+          t = ts(parts[0]),
+          delay = (idx % 30) * 22;
+        const name = m.name.replace(/'/g, "\\'");
+        const src = m.image_random_arena || m.image;
+        const img = src
+          ? `<img src="${src}" alt="${m.name}" loading="lazy" onerror="this.style.display='none';this.nextSibling.style.display='flex'">`
+          : "";
+        return `<div class="miscrit-card" style="animation-delay:${delay}ms;border-color:${
+          t.border
+        }" onclick="openModal('${name}')"><div class="card-img-wrap">${img}<div class="card-img-ph" style="display:${
+          src ? "none" : "flex"
+        }">?</div></div><div class="card-name" title="${m.name}">${
+          m.name
+        }</div><div class="type-badges">${typeBadgesHTML(m.type)}</div>${
+          m.speed != null
+            ? `<div class="speed-row"><span class="speed-lbl">SPD</span><div class="spd-track"><div class="spd-fill" style="width:${Math.min(
+                100,
+                (m.speed / 5) * 100
+              )}%"></div></div><span class="speed-val">${m.speed}</span></div>`
+            : ""
+        }</div>`;
+      }
+      function updateStats() {
+        document.getElementById("statTotal").textContent = miscrits.length;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  MODAL
+      // ═══════════════════════════════════════════════════════════
+      const STAT_DEFS = [
+        { key: "physical_attack", label: "Phys Atk", color: "#f07030" },
+        { key: "elemental_attack", label: "Elem Atk", color: "#40b0d8" },
+        { key: "physical_defense", label: "Phys Def", color: "#7ab85a" },
+        { key: "elemental_defense", label: "Elem Def", color: "#b07de8" },
+        { key: "health", label: "Health", color: "#e07070" },
+        { key: "speed", label: "Speed", color: "#c9a227" },
+      ];
+      function pipRow(label, val, color, max = 5) {
+        if (val == null) return "";
+        const pips = Array.from({ length: max }, (_, i) => {
+          const on = i < val;
+          return `<div class="stat-pip${on ? " filled" : ""}" style="${
+            on ? `background:${color};border-color:${color}` : ""
+          }"></div>`;
+        }).join("");
+        return `<div class="stat-row"><span class="stat-name">${label}</span><div class="stat-pips">${pips}</div><span class="stat-val" style="color:${color}">${val}</span></div>`;
+      }
+      function openModal(name) {
+        const m = miscrits.find((x) => x.name === name);
+        if (!m) return;
+        const parts = splitTypes(m.type),
+          t = ts(parts[0]);
+        document.getElementById("modalBar").style.background =
+          parts.length > 1
+            ? `linear-gradient(to right,${ts(parts[0]).color},${
+                ts(parts[1]).color
+              })`
+            : t.color;
+        document.getElementById("modalName").textContent = m.name;
+        const img = document.getElementById("modalImg"),
+          src = m.image_random_arena || m.image;
+        if (src) {
+          img.src = src;
+          img.style.display = "block";
+        } else img.style.display = "none";
+        document.getElementById(
+          "modalBadge"
+        ).innerHTML = `<div class="type-badges" style="justify-content:center">${typeBadgesHTML(
+          m.type
+        )}</div>`;
+        const hasStats = STAT_DEFS.some((s) => m[s.key] != null);
+        document.getElementById("modalStats").innerHTML = hasStats
+          ? '<div class="stat-section-title">Stats</div>' +
+            STAT_DEFS.map((s) => pipRow(s.label, m[s.key], s.color)).join("")
+          : "";
+        const desc = document.getElementById("modalDesc");
+        desc.textContent = m.description || "";
+        desc.style.display = m.description ? "block" : "none";
+        const urlEl = document.getElementById("modalUrl");
+        if (m.miscripedia_url) {
+          urlEl.href = m.miscripedia_url;
+          urlEl.textContent = "VIEW IN MISCRIPEDIA →";
+          urlEl.style.display = "block";
+        } else urlEl.style.display = "none";
+        document.getElementById("modalBackdrop").classList.add("open");
+      }
+      function closeModal() {
+        document.getElementById("modalBackdrop").classList.remove("open");
+      }
+      function onBackdropClick(e) {
+        if (e.target === document.getElementById("modalBackdrop")) closeModal();
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+      function toast(msg, type = "") {
+        const el = document.getElementById("toast");
+        el.textContent = msg;
+        el.className = "toast show " + type;
+        clearTimeout(el._t);
+        el._t = setTimeout(() => el.classList.remove("show"), 2600);
+      }
+
+      init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2382 @@
+[
+  {
+    "name": "Aebex",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/aebex_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Aebex.png"
+  },
+  {
+    "name": "Agnuf",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/agnuf_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Agnuf.png"
+  },
+  {
+    "name": "Alpha",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/alpha_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Alpha.png"
+  },
+  {
+    "name": "Ampupine",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/ampupine_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Ampupine.png"
+  },
+  {
+    "name": "Aquarion",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/aquarion_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Aquarion.png"
+  },
+  {
+    "name": "Aria",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/aria_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Aria.png"
+  },
+  {
+    "name": "Arigato",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/arigato_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Arigato.png"
+  },
+  {
+    "name": "Auger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/auger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Auger.png"
+  },
+  {
+    "name": "Avarus",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/avarus_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Avarus.png"
+  },
+  {
+    "name": "Babakku",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/babakku_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Babakku.png"
+  },
+  {
+    "name": "Beakka",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/beakka_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Beakka.png"
+  },
+  {
+    "name": "Beateorite",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/beateorite_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Beateorite.png"
+  },
+  {
+    "name": "Beelzebug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/beelzebug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Beelzebug.png"
+  },
+  {
+    "name": "Beetor",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/beetor_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Beetor.png"
+  },
+  {
+    "name": "Beldame",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/beldame_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Beldame.png"
+  },
+  {
+    "name": "Blazebit",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blazebit_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blazebit.png"
+  },
+  {
+    "name": "Blazertooth",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blazertooth_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blazertooth.png"
+  },
+  {
+    "name": "Blighted Cubsprout",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blighted_cubsprout_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blighted Cubsprout.png"
+  },
+  {
+    "name": "Blighted Fiender",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blighted_fiender_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blighted Fiender.png"
+  },
+  {
+    "name": "Blighted Flowerpiller",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blighted_flowerpiller_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blighted Flowerpiller.png"
+  },
+  {
+    "name": "Blighted Flue",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blighted_flue_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blighted Flue.png"
+  },
+  {
+    "name": "Blighted Kiloray",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blighted_kiloray_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blighted Kiloray.png"
+  },
+  {
+    "name": "Blobroller",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blobroller_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blobroller.png"
+  },
+  {
+    "name": "Bloombat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bloombat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bloombat.png"
+  },
+  {
+    "name": "Bloomple",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bloomple_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bloomple.png"
+  },
+  {
+    "name": "Blowpuffle",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blowpuffle_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blowpuffle.png"
+  },
+  {
+    "name": "Blub",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blub_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blub.png"
+  },
+  {
+    "name": "Bludger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bludger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bludger.png"
+  },
+  {
+    "name": "Blug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/blug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Blug.png"
+  },
+  {
+    "name": "Boltzee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/boltzee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Boltzee.png"
+  },
+  {
+    "name": "Boneshee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/boneshee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Boneshee.png"
+  },
+  {
+    "name": "Boo Blazertooth",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/boo_blazertooth_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Boo Blazertooth.png"
+  },
+  {
+    "name": "Brainzer",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/brainzer_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Brainzer.png"
+  },
+  {
+    "name": "Breezycheeks",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/breezycheeks_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Breezycheeks.png"
+  },
+  {
+    "name": "Bubbles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bubbles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bubbles.png"
+  },
+  {
+    "name": "Budillo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/budillo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Budillo.png"
+  },
+  {
+    "name": "Bunaken",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bunaken_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bunaken.png"
+  },
+  {
+    "name": "Bunplop",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/bunplop_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Bunplop.png"
+  },
+  {
+    "name": "Cadbunny",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/cadbunny_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Cadbunny.png"
+  },
+  {
+    "name": "Casanova",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/casanova_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Casanova.png"
+  },
+  {
+    "name": "Cerberuff",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/cerberuff_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Cerberuff.png"
+  },
+  {
+    "name": "Charix",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/charix_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Charix.png"
+  },
+  {
+    "name": "Charpy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/charpy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Charpy.png"
+  },
+  {
+    "name": "Crabbles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/crabbles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Crabbles.png"
+  },
+  {
+    "name": "Craggy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/craggy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Craggy.png"
+  },
+  {
+    "name": "Crickin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/crickin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Crickin.png"
+  },
+  {
+    "name": "Croaky",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/croaky_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Croaky.png"
+  },
+  {
+    "name": "Cubsprout",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/cubsprout_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Cubsprout.png"
+  },
+  {
+    "name": "Da Windy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/da_windy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Da Windy.png"
+  },
+  {
+    "name": "Dabee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dabee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dabee.png"
+  },
+  {
+    "name": "Daloo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/daloo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Daloo.png"
+  },
+  {
+    "name": "Damse",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/damse_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Damse.png"
+  },
+  {
+    "name": "Dark Aria",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_aria_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Aria.png"
+  },
+  {
+    "name": "Dark Arigato",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_arigato_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Arigato.png"
+  },
+  {
+    "name": "Dark Auger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_auger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Auger.png"
+  },
+  {
+    "name": "Dark Beetor",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_beetor_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Beetor.png"
+  },
+  {
+    "name": "Dark Breezycheeks",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_breezycheeks_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Breezycheeks.png"
+  },
+  {
+    "name": "Dark Bubbles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_bubbles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Bubbles.png"
+  },
+  {
+    "name": "Dark Croaky",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_croaky_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Croaky.png"
+  },
+  {
+    "name": "Dark Cubsprout",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_cubsprout_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Cubsprout.png"
+  },
+  {
+    "name": "Dark Echino",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_echino_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Echino.png"
+  },
+  {
+    "name": "Dark Eggy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_eggy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Eggy.png"
+  },
+  {
+    "name": "Dark Elefauna",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_elefauna_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Elefauna.png"
+  },
+  {
+    "name": "Dark Flameling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_flameling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Flameling.png"
+  },
+  {
+    "name": "Dark Flowerpiller",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_flowerpiller_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Flowerpiller.png"
+  },
+  {
+    "name": "Dark Flue",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_flue_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Flue.png"
+  },
+  {
+    "name": "Dark Flutterpat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_flutterpat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Flutterpat.png"
+  },
+  {
+    "name": "Dark Frostmite",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_frostmite_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Frostmite.png"
+  },
+  {
+    "name": "Dark Gurgleplops",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_gurgleplops_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Gurgleplops.png"
+  },
+  {
+    "name": "Dark Hoghedge",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_hoghedge_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Hoghedge.png"
+  },
+  {
+    "name": "Dark Hotfoot",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_hotfoot_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Hotfoot.png"
+  },
+  {
+    "name": "Dark Humbug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_humbug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Humbug.png"
+  },
+  {
+    "name": "Dark Hydroseal",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_hydroseal_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Hydroseal.png"
+  },
+  {
+    "name": "Dark Jellyshock",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_jellyshock_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Jellyshock.png"
+  },
+  {
+    "name": "Dark Kiloray",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_kiloray_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Kiloray.png"
+  },
+  {
+    "name": "Dark Lavarilla",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_lavarilla_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Lavarilla.png"
+  },
+  {
+    "name": "Dark Lumera",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_lumera_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Lumera.png"
+  },
+  {
+    "name": "Dark Luna",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_luna_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Luna.png"
+  },
+  {
+    "name": "Dark Nessy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_nessy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Nessy.png"
+  },
+  {
+    "name": "Dark Owlie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_owlie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Owlie.png"
+  },
+  {
+    "name": "Dark Pillblaze",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_pillblaze_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Pillblaze.png"
+  },
+  {
+    "name": "Dark Poltergust",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_poltergust_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Poltergust.png"
+  },
+  {
+    "name": "Dark Prawnja",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_prawnja_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Prawnja.png"
+  },
+  {
+    "name": "Dark Quirk",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_quirk_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Quirk.png"
+  },
+  {
+    "name": "Dark Shellbee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_shellbee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Shellbee.png"
+  },
+  {
+    "name": "Dark Slithero",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_slithero_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Slithero.png"
+  },
+  {
+    "name": "Dark Snortus",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_snortus_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Snortus.png"
+  },
+  {
+    "name": "Dark Sparkitten",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_sparkitten_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Sparkitten.png"
+  },
+  {
+    "name": "Dark Sparkslug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_sparkslug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Sparkslug.png"
+  },
+  {
+    "name": "Dark Sparkupine",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_sparkupine_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Sparkupine.png"
+  },
+  {
+    "name": "Dark Spinnerette",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_spinnerette_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Spinnerette.png"
+  },
+  {
+    "name": "Dark Squibee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_squibee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Squibee.png"
+  },
+  {
+    "name": "Dark Squirmle",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_squirmle_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Squirmle.png"
+  },
+  {
+    "name": "Dark Steamguin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_steamguin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Steamguin.png"
+  },
+  {
+    "name": "Dark Tongutail",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_tongutail_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Tongutail.png"
+  },
+  {
+    "name": "Dark Treemur",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_treemur_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Treemur.png"
+  },
+  {
+    "name": "Dark Tulipinny",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_tulipinny_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Tulipinny.png"
+  },
+  {
+    "name": "Dark Twiggum",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_twiggum_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Twiggum.png"
+  },
+  {
+    "name": "Dark Vexie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_vexie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Vexie.png"
+  },
+  {
+    "name": "Dark Viperd",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_viperd_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Viperd.png"
+  },
+  {
+    "name": "Dark Waddles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_waddles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Waddles.png"
+  },
+  {
+    "name": "Dark Weevern",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_weevern_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Weevern.png"
+  },
+  {
+    "name": "Dark Whik",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dark_whik_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dark Whik.png"
+  },
+  {
+    "name": "Deetlee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/deetlee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Deetlee.png"
+  },
+  {
+    "name": "Defilio",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/defilio_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Defilio.png"
+  },
+  {
+    "name": "Digsy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/digsy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Digsy.png"
+  },
+  {
+    "name": "Dorux",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dorux_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dorux.png"
+  },
+  {
+    "name": "Dreamger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/dreamger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Dreamger.png"
+  },
+  {
+    "name": "Drilldent",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/drilldent_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Drilldent.png"
+  },
+  {
+    "name": "Drilune",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/drilune_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Drilune.png"
+  },
+  {
+    "name": "Echino",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/echino_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Echino.png"
+  },
+  {
+    "name": "Eclipso",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/eclipso_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Eclipso.png"
+  },
+  {
+    "name": "Eggy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/eggy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Eggy.png"
+  },
+  {
+    "name": "Ekkult",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/ekkult_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Ekkult.png"
+  },
+  {
+    "name": "Elefauna",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/elefauna_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Elefauna.png"
+  },
+  {
+    "name": "Elphin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/elphin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Elphin.png"
+  },
+  {
+    "name": "Eluzar",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/eluzar_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Eluzar.png"
+  },
+  {
+    "name": "Enex",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/enex_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Enex.png"
+  },
+  {
+    "name": "Equestrion",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/equestrion_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Equestrion.png"
+  },
+  {
+    "name": "Fangly",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fangly_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fangly.png"
+  },
+  {
+    "name": "Felis",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/felis_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Felis.png"
+  },
+  {
+    "name": "Fennie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fennie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fennie.png"
+  },
+  {
+    "name": "Fickra",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fickra_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fickra.png"
+  },
+  {
+    "name": "Fiender",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fiender_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fiender.png"
+  },
+  {
+    "name": "Flaclay",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flaclay_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flaclay.png"
+  },
+  {
+    "name": "Flameling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flameling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flameling.png"
+  },
+  {
+    "name": "Flaring",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flaring_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flaring.png"
+  },
+  {
+    "name": "Flintly",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flintly_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flintly.png"
+  },
+  {
+    "name": "Flowerpiller",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flowerpiller_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flowerpiller.png"
+  },
+  {
+    "name": "Flue",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flue_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flue.png"
+  },
+  {
+    "name": "Flurfy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flurfy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flurfy.png"
+  },
+  {
+    "name": "Flurrious",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flurrious_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flurrious.png"
+  },
+  {
+    "name": "Flutterpat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/flutterpat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Flutterpat.png"
+  },
+  {
+    "name": "Foil Croaky",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_croaky_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Croaky.png"
+  },
+  {
+    "name": "Foil Flintly",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_flintly_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Flintly.png"
+  },
+  {
+    "name": "Foil Fossillia",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_fossillia_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Fossillia.png"
+  },
+  {
+    "name": "Foil Kiloray",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_kiloray_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Kiloray.png"
+  },
+  {
+    "name": "Foil Liquifien",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_liquifien_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Liquifien.png"
+  },
+  {
+    "name": "Foil Luna",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_luna_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Luna.png"
+  },
+  {
+    "name": "Foil Pamboo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_pamboo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Pamboo.png"
+  },
+  {
+    "name": "Foil Pangoleaf",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_pangoleaf_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Pangoleaf.png"
+  },
+  {
+    "name": "Foil Rockodile",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_rockodile_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Rockodile.png"
+  },
+  {
+    "name": "Foil Thundercracker",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_thundercracker_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Thundercracker.png"
+  },
+  {
+    "name": "Foil Vexie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_vexie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Vexie.png"
+  },
+  {
+    "name": "Foil Vhisp",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_vhisp_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Vhisp.png"
+  },
+  {
+    "name": "Foil Waddles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/foil_waddles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Foil Waddles.png"
+  },
+  {
+    "name": "Fossillia",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fossillia_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fossillia.png"
+  },
+  {
+    "name": "Freedom",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/freedom_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Freedom.png"
+  },
+  {
+    "name": "Freezet",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/freezet_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Freezet.png"
+  },
+  {
+    "name": "Frostmite",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/frostmite_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Frostmite.png"
+  },
+  {
+    "name": "Frozy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/frozy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Frozy.png"
+  },
+  {
+    "name": "Fubby",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fubby_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fubby.png"
+  },
+  {
+    "name": "Fungask",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/fungask_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Fungask.png"
+  },
+  {
+    "name": "Furiko",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/furiko_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Furiko.png"
+  },
+  {
+    "name": "Gemix",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/gemix_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Gemix.png"
+  },
+  {
+    "name": "Geneseed",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/geneseed_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Geneseed.png"
+  },
+  {
+    "name": "Gippo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/gippo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Gippo.png"
+  },
+  {
+    "name": "Glary",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/glary_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Glary.png"
+  },
+  {
+    "name": "Gog",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/gog_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Gog.png"
+  },
+  {
+    "name": "Goo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/goo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Goo.png"
+  },
+  {
+    "name": "Gravitron",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/gravitron_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Gravitron.png"
+  },
+  {
+    "name": "Grimm Kiloray",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/grimm_kiloray_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Grimm Kiloray.png"
+  },
+  {
+    "name": "Grubbean",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/grubbean_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Grubbean.png"
+  },
+  {
+    "name": "Gurgleplops",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/gurgleplops_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Gurgleplops.png"
+  },
+  {
+    "name": "Hawkai",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hawkai_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hawkai.png"
+  },
+  {
+    "name": "Hekatom",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hekatom_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hekatom.png"
+  },
+  {
+    "name": "Hippoke",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hippoke_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hippoke.png"
+  },
+  {
+    "name": "Hoghedge",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hoghedge_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hoghedge.png"
+  },
+  {
+    "name": "Hoopty",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hoopty_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hoopty.png"
+  },
+  {
+    "name": "Hotdog",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hotdog_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hotdog.png"
+  },
+  {
+    "name": "Hotfoot",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hotfoot_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hotfoot.png"
+  },
+  {
+    "name": "Humbug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/humbug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Humbug.png"
+  },
+  {
+    "name": "Hydroseal",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/hydroseal_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Hydroseal.png"
+  },
+  {
+    "name": "Ignios",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/ignios_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Ignios.png"
+  },
+  {
+    "name": "Inferno",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/inferno_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Inferno.png"
+  },
+  {
+    "name": "Jack",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/jack_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Jack.png"
+  },
+  {
+    "name": "Jellyshock",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/jellyshock_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Jellyshock.png"
+  },
+  {
+    "name": "Kawanko",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/kawanko_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Kawanko.png"
+  },
+  {
+    "name": "Keeper",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/keeper_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Keeper.png"
+  },
+  {
+    "name": "Kelpa",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/kelpa_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Kelpa.png"
+  },
+  {
+    "name": "Kiloray",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/kiloray_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Kiloray.png"
+  },
+  {
+    "name": "Kitpole",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/kitpole_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Kitpole.png"
+  },
+  {
+    "name": "Lagoony",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lagoony_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lagoony.png"
+  },
+  {
+    "name": "Lambolt",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lambolt_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lambolt.png"
+  },
+  {
+    "name": "Larbunni",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/larbunni_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Larbunni.png"
+  },
+  {
+    "name": "Lavarilla",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lavarilla_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lavarilla.png"
+  },
+  {
+    "name": "Lavazard",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lavazard_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lavazard.png"
+  },
+  {
+    "name": "Leggy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/leggy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Leggy.png"
+  },
+  {
+    "name": "Lheon",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lheon_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lheon.png"
+  },
+  {
+    "name": "Light Bludger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_bludger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Bludger.png"
+  },
+  {
+    "name": "Light Crickin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_crickin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Crickin.png"
+  },
+  {
+    "name": "Light Digsy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_digsy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Digsy.png"
+  },
+  {
+    "name": "Light Flue",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_flue_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Flue.png"
+  },
+  {
+    "name": "Light Flurfy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_flurfy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Flurfy.png"
+  },
+  {
+    "name": "Light Fossillia",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_fossillia_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Fossillia.png"
+  },
+  {
+    "name": "Light Frostmite",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_frostmite_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Frostmite.png"
+  },
+  {
+    "name": "Light Grubbean",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_grubbean_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Grubbean.png"
+  },
+  {
+    "name": "Light Hawkai",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_hawkai_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Hawkai.png"
+  },
+  {
+    "name": "Light Ignios",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_ignios_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Ignios.png"
+  },
+  {
+    "name": "Light Jack",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_jack_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Jack.png"
+  },
+  {
+    "name": "Light Mumbah",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_mumbah_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Mumbah.png"
+  },
+  {
+    "name": "Light Nanaslug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_nanaslug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Nanaslug.png"
+  },
+  {
+    "name": "Light Nibbles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_nibbles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Nibbles.png"
+  },
+  {
+    "name": "Light Quirk",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_quirk_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Quirk.png"
+  },
+  {
+    "name": "Light Rafiery",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_rafiery_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Rafiery.png"
+  },
+  {
+    "name": "Light Slithero",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_slithero_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Slithero.png"
+  },
+  {
+    "name": "Light Snorkels",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_snorkels_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Snorkels.png"
+  },
+  {
+    "name": "Light Sparkspeck",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_sparkspeck_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Sparkspeck.png"
+  },
+  {
+    "name": "Light Squibee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_squibee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Squibee.png"
+  },
+  {
+    "name": "Light Statikat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_statikat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Statikat.png"
+  },
+  {
+    "name": "Light Tectonyx",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_tectonyx_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Tectonyx.png"
+  },
+  {
+    "name": "Light Twiggum",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_twiggum_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Twiggum.png"
+  },
+  {
+    "name": "Light Wavesling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_wavesling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Wavesling.png"
+  },
+  {
+    "name": "Light Weevern",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_weevern_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Weevern.png"
+  },
+  {
+    "name": "Light Zaptor",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/light_zaptor_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Light Zaptor.png"
+  },
+  {
+    "name": "Lil Bubs",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lil_bubs_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lil Bubs.png"
+  },
+  {
+    "name": "Liothning",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/liothning_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Liothning.png"
+  },
+  {
+    "name": "Liquifien",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/liquifien_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Liquifien.png"
+  },
+  {
+    "name": "Lithos",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lithos_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lithos.png"
+  },
+  {
+    "name": "Lumera",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lumera_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lumera.png"
+  },
+  {
+    "name": "Lumite",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lumite_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lumite.png"
+  },
+  {
+    "name": "Luna",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/luna_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Luna.png"
+  },
+  {
+    "name": "Lunako",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lunako_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lunako.png"
+  },
+  {
+    "name": "Lutox",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/lutox_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Lutox.png"
+  },
+  {
+    "name": "Luvcraft",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/luvcraft_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Luvcraft.png"
+  },
+  {
+    "name": "Magpole",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/magpole_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Magpole.png"
+  },
+  {
+    "name": "Mama",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mama_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mama.png"
+  },
+  {
+    "name": "Manio",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/manio_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Manio.png"
+  },
+  {
+    "name": "Mech",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mech_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mech.png"
+  },
+  {
+    "name": "Microblast",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/microblast_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Microblast.png"
+  },
+  {
+    "name": "Mistraxol",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mistraxol_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mistraxol.png"
+  },
+  {
+    "name": "Mooncrit",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mooncrit_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mooncrit.png"
+  },
+  {
+    "name": "Moondrip",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/moondrip_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Moondrip.png"
+  },
+  {
+    "name": "Mucora",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mucora_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mucora.png"
+  },
+  {
+    "name": "Mumbah",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mumbah_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mumbah.png"
+  },
+  {
+    "name": "Mun Kee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/mun_kee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Mun Kee.png"
+  },
+  {
+    "name": "Nanaslug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nanaslug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nanaslug.png"
+  },
+  {
+    "name": "Narlope",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/narlope_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Narlope.png"
+  },
+  {
+    "name": "Nero",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nero_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nero.png"
+  },
+  {
+    "name": "Nessy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nessy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nessy.png"
+  },
+  {
+    "name": "Nibbles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nibbles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nibbles.png"
+  },
+  {
+    "name": "Niboro",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/niboro_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Niboro.png"
+  },
+  {
+    "name": "Nubyll",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nubyll_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nubyll.png"
+  },
+  {
+    "name": "Nyma",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/nyma_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Nyma.png"
+  },
+  {
+    "name": "Octavio",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/octavio_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Octavio.png"
+  },
+  {
+    "name": "Oozie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/oozie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Oozie.png"
+  },
+  {
+    "name": "Opigum",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/opigum_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Opigum.png"
+  },
+  {
+    "name": "Orbling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/orbling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Orbling.png"
+  },
+  {
+    "name": "Orcatide",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/orcatide_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Orcatide.png"
+  },
+  {
+    "name": "Osmeron",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/osmeron_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Osmeron.png"
+  },
+  {
+    "name": "Owlie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/owlie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Owlie.png"
+  },
+  {
+    "name": "Pachydo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pachydo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pachydo.png"
+  },
+  {
+    "name": "Pamboo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pamboo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pamboo.png"
+  },
+  {
+    "name": "Pangoleaf",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pangoleaf_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pangoleaf.png"
+  },
+  {
+    "name": "Papa",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/papa_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Papa.png"
+  },
+  {
+    "name": "Patchkin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/patchkin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Patchkin.png"
+  },
+  {
+    "name": "Peekly",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/peekly_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Peekly.png"
+  },
+  {
+    "name": "Peepsie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/peepsie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Peepsie.png"
+  },
+  {
+    "name": "Pennon",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pennon_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pennon.png"
+  },
+  {
+    "name": "Pestling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pestling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pestling.png"
+  },
+  {
+    "name": "Phoboros",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/phoboros_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Phoboros.png"
+  },
+  {
+    "name": "Pillblaze",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pillblaze_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pillblaze.png"
+  },
+  {
+    "name": "Pinplar",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pinplar_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pinplar.png"
+  },
+  {
+    "name": "Pirate Bludger",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pirate_bludger_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pirate Bludger.png"
+  },
+  {
+    "name": "Piskie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/piskie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Piskie.png"
+  },
+  {
+    "name": "Pithapillar",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pithapillar_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pithapillar.png"
+  },
+  {
+    "name": "Podo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/podo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Podo.png"
+  },
+  {
+    "name": "Pollifog",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pollifog_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pollifog.png"
+  },
+  {
+    "name": "Poltergust",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/poltergust_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Poltergust.png"
+  },
+  {
+    "name": "Poppet",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/poppet_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Poppet.png"
+  },
+  {
+    "name": "Prawnja",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/prawnja_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Prawnja.png"
+  },
+  {
+    "name": "Pyras",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pyras_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pyras.png"
+  },
+  {
+    "name": "Pyrex",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/pyrex_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Pyrex.png"
+  },
+  {
+    "name": "Quebble",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/quebble_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Quebble.png"
+  },
+  {
+    "name": "Quirk",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/quirk_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Quirk.png"
+  },
+  {
+    "name": "Rafiery",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rafiery_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rafiery.png"
+  },
+  {
+    "name": "Raldio",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/raldio_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Raldio.png"
+  },
+  {
+    "name": "Rephily",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rephily_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rephily.png"
+  },
+  {
+    "name": "Rexie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rexie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rexie.png"
+  },
+  {
+    "name": "Ribos",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/ribos_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Ribos.png"
+  },
+  {
+    "name": "Rocker Octavio",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rocker_octavio_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rocker Octavio.png"
+  },
+  {
+    "name": "Rockodile",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rockodile_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rockodile.png"
+  },
+  {
+    "name": "Rudy",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/rudy_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Rudy.png"
+  },
+  {
+    "name": "Sapphron",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sapphron_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sapphron.png"
+  },
+  {
+    "name": "Scarecrow Charix",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/scarecrow_charix_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Scarecrow Charix.png"
+  },
+  {
+    "name": "Shellbee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/shellbee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Shellbee.png"
+  },
+  {
+    "name": "Shroolet",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/shroolet_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Shroolet.png"
+  },
+  {
+    "name": "Shroomer",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/shroomer_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Shroomer.png"
+  },
+  {
+    "name": "Shurikoon",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/shurikoon_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Shurikoon.png"
+  },
+  {
+    "name": "Silkire",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/silkire_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Silkire.png"
+  },
+  {
+    "name": "Skelepup",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/skelepup_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Skelepup.png"
+  },
+  {
+    "name": "Skustunk",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/skustunk_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Skustunk.png"
+  },
+  {
+    "name": "Sledgehog",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sledgehog_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sledgehog.png"
+  },
+  {
+    "name": "Slithero",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/slithero_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Slithero.png"
+  },
+  {
+    "name": "Smolderfry",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/smolderfry_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Smolderfry.png"
+  },
+  {
+    "name": "Snatcher",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/snatcher_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Snatcher.png"
+  },
+  {
+    "name": "Snorkels",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/snorkels_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Snorkels.png"
+  },
+  {
+    "name": "Snortus",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/snortus_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Snortus.png"
+  },
+  {
+    "name": "Sol",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sol_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sol.png"
+  },
+  {
+    "name": "Sora",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sora_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sora.png"
+  },
+  {
+    "name": "Spangles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/spangles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Spangles.png"
+  },
+  {
+    "name": "Sparkitten",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sparkitten_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sparkitten.png"
+  },
+  {
+    "name": "Sparkslug",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sparkslug_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sparkslug.png"
+  },
+  {
+    "name": "Sparkspeck",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sparkspeck_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sparkspeck.png"
+  },
+  {
+    "name": "Sparkupine",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/sparkupine_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Sparkupine.png"
+  },
+  {
+    "name": "Spinnerette",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/spinnerette_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Spinnerette.png"
+  },
+  {
+    "name": "Splender",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/splender_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Splender.png"
+  },
+  {
+    "name": "Squawcat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/squawcat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Squawcat.png"
+  },
+  {
+    "name": "Squibee",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/squibee_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Squibee.png"
+  },
+  {
+    "name": "Squirmle",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/squirmle_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Squirmle.png"
+  },
+  {
+    "name": "Stalkra",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/stalkra_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Stalkra.png"
+  },
+  {
+    "name": "Statikat",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/statikat_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Statikat.png"
+  },
+  {
+    "name": "Steamguin",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/steamguin_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Steamguin.png"
+  },
+  {
+    "name": "Tectonyx",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/tectonyx_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Tectonyx.png"
+  },
+  {
+    "name": "Thundercracker",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/thundercracker_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Thundercracker.png"
+  },
+  {
+    "name": "Tongutail",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/tongutail_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Tongutail.png"
+  },
+  {
+    "name": "Treemur",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/treemur_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Treemur.png"
+  },
+  {
+    "name": "Tulipinny",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/tulipinny_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Tulipinny.png"
+  },
+  {
+    "name": "Twiggum",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/twiggum_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Twiggum.png"
+  },
+  {
+    "name": "Ursiwave",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/ursiwave_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Ursiwave.png"
+  },
+  {
+    "name": "Valentino",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/valentino_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Valentino.png"
+  },
+  {
+    "name": "Vamp Skustunk",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/vamp_skustunk_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Vamp Skustunk.png"
+  },
+  {
+    "name": "Vexie",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/vexie_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Vexie.png"
+  },
+  {
+    "name": "Vhisp",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/vhisp_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Vhisp.png"
+  },
+  {
+    "name": "Viperd",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/viperd_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Viperd.png"
+  },
+  {
+    "name": "Voidotron",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/voidotron_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Voidotron.png"
+  },
+  {
+    "name": "Voltombra",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/voltombra_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Voltombra.png"
+  },
+  {
+    "name": "Waddles",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/waddles_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Waddles.png"
+  },
+  {
+    "name": "Warrian",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/warrian_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Warrian.png"
+  },
+  {
+    "name": "Wavesling",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/wavesling_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Wavesling.png"
+  },
+  {
+    "name": "Weevern",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/weevern_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Weevern.png"
+  },
+  {
+    "name": "Whik",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/whik_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Whik.png"
+  },
+  {
+    "name": "Whispen",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/whispen_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Whispen.png"
+  },
+  {
+    "name": "Winnebeargo",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/winnebeargo_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Winnebeargo.png"
+  },
+  {
+    "name": "Woolly",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/woolly_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Woolly.png"
+  },
+  {
+    "name": "Yuefira",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/yuefira_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Yuefira.png"
+  },
+  {
+    "name": "Zappup",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/zappup_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Zappup.png"
+  },
+  {
+    "name": "Zaptor",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/zaptor_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Zaptor.png"
+  },
+  {
+    "name": "Zephry",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/zephry_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Zephry.png"
+  },
+  {
+    "name": "Zhakor",
+    "type": "unknown",
+    "speed": null,
+    "image": "https://cdn.worldofmiscrits.com/miscrits/zhakor_back.png",
+    "image_random_arena": "images_scraped_from_miscripedia/Zhakor.png"
+  }
+]
