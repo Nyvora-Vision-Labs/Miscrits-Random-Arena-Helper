@@ -49,7 +49,7 @@ except ImportError:
 # ── Config ────────────────────────────────────────────────────────────────────
 BASE_URL      = "https://www.worldofmiscrits.com/miscripedia"
 ID_START      = 1
-ID_END        = 670
+ID_END        = 700
 OUTPUT_FOLDER = "images_scraped_from_miscripedia"
 
 BROWSER       = "chrome"    # "chrome" or "firefox"
