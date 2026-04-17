@@ -1,0 +1,341 @@
+id,name,image_url
+1,Flue,https://cdn.worldofmiscrits.com/avatars/afterburn_avatar.png
+2,Flowerpiller,https://cdn.worldofmiscrits.com/avatars/fairyblossom_avatar.png
+3,Prawnja,https://cdn.worldofmiscrits.com/avatars/clawmurai_avatar.png
+4,Weevern,https://cdn.worldofmiscrits.com/avatars/serpasoar_avatar.png
+5,Cubsprout,https://cdn.worldofmiscrits.com/avatars/bloomane_avatar.png
+6,Sparkupine,https://cdn.worldofmiscrits.com/avatars/wiquill_avatar.png
+7,Hydroseal,https://cdn.worldofmiscrits.com/avatars/squalrus_avatar.png
+8,Snortus,https://cdn.worldofmiscrits.com/avatars/coraswine_avatar.png
+9,Quirk,https://cdn.worldofmiscrits.com/avatars/subterhuge_avatar.png
+10,Flameling,https://cdn.worldofmiscrits.com/avatars/infernus_avatar.png
+11,Lumera,https://cdn.worldofmiscrits.com/avatars/anublaze_avatar.png
+12,Snatcher,https://cdn.worldofmiscrits.com/avatars/snapdragon_avatar.png
+13,Elefauna,https://cdn.worldofmiscrits.com/avatars/grastodon_avatar.png
+14,Nessy,https://cdn.worldofmiscrits.com/avatars/aquine_avatar.png
+15,Hotfoot,https://cdn.worldofmiscrits.com/avatars/kang_fu_avatar.png
+16,Twiggum,https://cdn.worldofmiscrits.com/avatars/willoak_avatar.png
+17,Shellbee,https://cdn.worldofmiscrits.com/avatars/kalamos_avatar.png
+18,Squibee,https://cdn.worldofmiscrits.com/avatars/krakenhook_avatar.png
+19,Steamguin,https://cdn.worldofmiscrits.com/avatars/aukamotive_avatar.png
+20,Waddles,https://cdn.worldofmiscrits.com/avatars/mallardon_avatar.png
+21,Treemur,https://cdn.worldofmiscrits.com/avatars/monfiki_avatar.png
+22,Tulipinny,https://cdn.worldofmiscrits.com/avatars/ongabonga_avatar.png
+23,Dark Flue,https://cdn.worldofmiscrits.com/avatars/dark_afterburn_avatar.png
+24,Dark Flowerpiller,https://cdn.worldofmiscrits.com/avatars/dark_fairyblossom_avatar.png
+25,Dark Prawnja,https://cdn.worldofmiscrits.com/avatars/dark_clawmurai_avatar.png
+26,Blazebit,https://cdn.worldofmiscrits.com/avatars/eruptacus_avatar.png
+27,Frostmite,https://cdn.worldofmiscrits.com/avatars/abomino_avatar.png
+28,Blazertooth,https://cdn.worldofmiscrits.com/avatars/minotorch_avatar.png
+29,Statikat,https://cdn.worldofmiscrits.com/avatars/panthundra_avatar.png
+30,Equestrion,https://cdn.worldofmiscrits.com/avatars/sagittarion_avatar.png
+31,Drilldent,https://cdn.worldofmiscrits.com/avatars/demolasher_avatar.png
+32,Kiloray,https://cdn.worldofmiscrits.com/avatars/edison_ray_avatar.png
+33,Breezycheeks,https://cdn.worldofmiscrits.com/avatars/glidengale_avatar.png
+34,Mumbah,https://cdn.worldofmiscrits.com/avatars/sphynxus_avatar.png
+35,Aria,https://cdn.worldofmiscrits.com/avatars/wyndasia_avatar.png
+36,Jellyshock,https://cdn.worldofmiscrits.com/avatars/medustung_avatar.png
+37,Croaky,https://cdn.worldofmiscrits.com/avatars/geotoad_avatar.png
+38,Sparkslug,https://cdn.worldofmiscrits.com/avatars/buzzcargo_avatar.png
+39,Craggy,https://cdn.worldofmiscrits.com/avatars/mineram_avatar.png
+40,Owlie,https://cdn.worldofmiscrits.com/avatars/hootray_avatar.png
+41,Luna,https://cdn.worldofmiscrits.com/avatars/antennious_avatar.png
+42,Poltergust,https://cdn.worldofmiscrits.com/avatars/zephyrgeist_avatar.png
+43,Fossillia,https://cdn.worldofmiscrits.com/avatars/primordius_avatar.png
+44,Eggy,https://cdn.worldofmiscrits.com/avatars/rocklodon_avatar.png
+45,Thundercracker,https://cdn.worldofmiscrits.com/avatars/clobberilla_avatar.png
+46,Mun Kee,https://cdn.worldofmiscrits.com/avatars/hanuphoon_avatar.png
+47,Microblast,https://cdn.worldofmiscrits.com/avatars/zapire_avatar.png
+48,Sledgehog,https://cdn.worldofmiscrits.com/avatars/stalagfright_avatar.png
+49,Sapphron,https://cdn.worldofmiscrits.com/avatars/scorpionyx_avatar.png
+50,Sparkspeck,https://cdn.worldofmiscrits.com/avatars/glitterglint_avatar.png
+51,Grubbean,https://cdn.worldofmiscrits.com/avatars/thornaxis_avatar.png
+52,Echino,https://cdn.worldofmiscrits.com/avatars/warro_avatar.png
+53,Wavesling,https://cdn.worldofmiscrits.com/avatars/nessilisk_avatar.png
+54,Sparkitten,https://cdn.worldofmiscrits.com/avatars/cheetorch_avatar.png
+55,Arigato,https://cdn.worldofmiscrits.com/avatars/dynamellow_avatar.png
+56,Jack,https://cdn.worldofmiscrits.com/avatars/tuzee_avatar.png
+57,Quebble,https://cdn.worldofmiscrits.com/avatars/quarriock_avatar.png
+58,Digsy,https://cdn.worldofmiscrits.com/avatars/excavior_avatar.png
+59,Hippoke,https://cdn.worldofmiscrits.com/avatars/triceratron_avatar.png
+60,Leggy,https://cdn.worldofmiscrits.com/avatars/ostral_avatar.png
+61,Orcatide,https://cdn.worldofmiscrits.com/avatars/hydroslam_avatar.png
+62,Flutterpat,https://cdn.worldofmiscrits.com/avatars/gazaereal_avatar.png
+63,Snorkels,https://cdn.worldofmiscrits.com/avatars/leviafin_avatar.png
+64,Kelpa,https://cdn.worldofmiscrits.com/avatars/derelicro_avatar.png
+65,Ignios,https://cdn.worldofmiscrits.com/avatars/preliator_avatar.png
+67,Beelzebug,https://cdn.worldofmiscrits.com/avatars/zzzap_avatar.png
+68,Winnebeargo,https://cdn.worldofmiscrits.com/avatars/minninnewah_avatar.png
+69,Fennie,https://cdn.worldofmiscrits.com/avatars/dustelle_avatar.png
+70,Patchkin,https://cdn.worldofmiscrits.com/avatars/reaping_gourd_avatar.png
+72,Flurrious,https://cdn.worldofmiscrits.com/avatars/clawsickle_avatar.png
+73,Fangly,https://cdn.worldofmiscrits.com/avatars/tuskalate_avatar.png
+74,Dark Kiloray,https://cdn.worldofmiscrits.com/avatars/dark_edison_ray_avatar.png
+75,Dark Croaky,https://cdn.worldofmiscrits.com/avatars/dark_geotoad_avatar.png
+76,Valentino,https://cdn.worldofmiscrits.com/avatars/rebound_avatar.png
+77,Dark Cubsprout,https://cdn.worldofmiscrits.com/avatars/dark_bloomane_avatar.png
+78,Dark Sparkitten,https://cdn.worldofmiscrits.com/avatars/dark_cheetorch_avatar.png
+79,Dark Snortus,https://cdn.worldofmiscrits.com/avatars/dark_coraswine_avatar.png
+80,Boltzee,https://cdn.worldofmiscrits.com/avatars/violimp_avatar.png
+82,Dark Owlie,https://cdn.worldofmiscrits.com/avatars/dark_hootray_avatar.png
+83,Dark Echino,https://cdn.worldofmiscrits.com/avatars/dark_warro_avatar.png
+85,Dark Arigato,https://cdn.worldofmiscrits.com/avatars/dark_dynamellow_avatar.png
+86,Dark Hydroseal,https://cdn.worldofmiscrits.com/avatars/dark_squalrus_avatar.png
+87,Peepsie,https://cdn.worldofmiscrits.com/avatars/cheepers_avatar.png
+88,Dark Eggy,https://cdn.worldofmiscrits.com/avatars/dark_rocklodon_avatar.png
+90,Dark Flameling,https://cdn.worldofmiscrits.com/avatars/dark_infernus_avatar.png
+91,Dark Elefauna,https://cdn.worldofmiscrits.com/avatars/dark_grastodon_avatar.png
+93,Mama,https://cdn.worldofmiscrits.com/avatars/genesis_avatar.png
+94,Dark Nessy,https://cdn.worldofmiscrits.com/avatars/dark_aquine_avatar.png
+95,Dark Hotfoot,https://cdn.worldofmiscrits.com/avatars/dark_kang_fu_avatar.png
+97,Dark Breezycheeks,https://cdn.worldofmiscrits.com/avatars/dark_glidengale_avatar.png
+98,Papa,https://cdn.worldofmiscrits.com/avatars/zeusicus_avatar.png
+101,Whik,https://cdn.worldofmiscrits.com/avatars/vesuvion_avatar.png
+102,Slithero,https://cdn.worldofmiscrits.com/avatars/incineron_avatar.png
+104,Spinnerette,https://cdn.worldofmiscrits.com/avatars/gigantula_avatar.png
+108,Crickin,https://cdn.worldofmiscrits.com/avatars/praze_avatar.png
+111,Bubbles,https://cdn.worldofmiscrits.com/avatars/popiller_avatar.png
+112,Humbug,https://cdn.worldofmiscrits.com/avatars/aviona_avatar.png
+115,Lavarilla,https://cdn.worldofmiscrits.com/avatars/obsidiape_avatar.png
+121,Bloomple,https://cdn.worldofmiscrits.com/avatars/miraca_avatar.png
+124,Pamboo,https://cdn.worldofmiscrits.com/avatars/pixiuma_avatar.png
+125,Rockodile,https://cdn.worldofmiscrits.com/avatars/growliath_avatar.png
+133,Boneshee,https://cdn.worldofmiscrits.com/avatars/osteowraith_avatar.png
+134,Ursiwave,https://cdn.worldofmiscrits.com/avatars/ripcurlio_avatar.png
+135,Bludger,https://cdn.worldofmiscrits.com/avatars/convincer_avatar.png
+138,Zaptor,https://cdn.worldofmiscrits.com/avatars/tesladon_avatar.png
+139,Narlope,https://cdn.worldofmiscrits.com/avatars/majestrike_avatar.png
+142,Vexie,https://cdn.worldofmiscrits.com/avatars/alionyx_avatar.png
+144,Tongutail,https://cdn.worldofmiscrits.com/avatars/bifurcrystal_avatar.png
+151,Hawkai,https://cdn.worldofmiscrits.com/avatars/hawkogan_avatar.png
+152,Nero,https://cdn.worldofmiscrits.com/avatars/napoleon_avatar.png
+155,Pollifog,https://cdn.worldofmiscrits.com/avatars/kinginrin_avatar.png
+156,Felis,https://cdn.worldofmiscrits.com/avatars/chiroptera_avatar.png
+158,Tectonyx,https://cdn.worldofmiscrits.com/avatars/valrog_avatar.png
+168,Nibbles,https://cdn.worldofmiscrits.com/avatars/coyver_avatar.png
+171,Skustunk,https://cdn.worldofmiscrits.com/avatars/sulfurious_avatar.png
+176,Flintly,https://cdn.worldofmiscrits.com/avatars/napalm_avatar.png
+180,Gog,https://cdn.worldofmiscrits.com/avatars/primordion_avatar.png
+184,Octavio,https://cdn.worldofmiscrits.com/avatars/dischord_avatar.png
+192,Crabbles,https://cdn.worldofmiscrits.com/avatars/stabbles_avatar.png
+196,Inferno,https://cdn.worldofmiscrits.com/avatars/dozer_avatar.png
+197,Hotdog,https://cdn.worldofmiscrits.com/avatars/magmutt_avatar.png
+200,Rafiery,https://cdn.worldofmiscrits.com/avatars/stomprage_avatar.png
+201,Nanaslug,https://cdn.worldofmiscrits.com/avatars/tornadouse_avatar.png
+202,Vhisp,https://cdn.worldofmiscrits.com/avatars/fangale_avatar.png
+203,Raldio,https://cdn.worldofmiscrits.com/avatars/verdauntless_avatar.png
+205,Freedom,https://cdn.worldofmiscrits.com/avatars/patriot_avatar.png
+206,Gemix,https://cdn.worldofmiscrits.com/avatars/ferocilux_avatar.png
+210,Podo,https://cdn.worldofmiscrits.com/avatars/tikki_avatar.png
+212,Lavazard,https://cdn.worldofmiscrits.com/avatars/flamydosaurus_avatar.png
+214,Shurikoon,https://cdn.worldofmiscrits.com/avatars/ninjat_avatar.png
+223,Skelepup,https://cdn.worldofmiscrits.com/avatars/frankensnarl_avatar.png
+226,Foil Waddles,https://cdn.worldofmiscrits.com/avatars/foil_mallardon_avatar.png
+227,Foil Fossillia,https://cdn.worldofmiscrits.com/avatars/foil_primordius_avatar.png
+230,Foil Thundercracker,https://cdn.worldofmiscrits.com/avatars/foil_clobberilla_avatar.png
+242,Hoopty,https://cdn.worldofmiscrits.com/avatars/shackle_avatar.png
+247,Foil Kiloray,https://cdn.worldofmiscrits.com/avatars/foil_edison_ray_avatar.png
+248,Spangles,https://cdn.worldofmiscrits.com/avatars/nova_avatar.png
+312,Opigum,https://cdn.worldofmiscrits.com/avatars/poggle_avatar.png
+322,Foil Flintly,https://cdn.worldofmiscrits.com/avatars/foil_napalm_avatar.png
+326,Light Tectonyx,https://cdn.worldofmiscrits.com/avatars/light_valrog_avatar.png
+338,Flaring,https://cdn.worldofmiscrits.com/avatars/lapinfire_avatar.png
+341,Cadbunny,https://cdn.worldofmiscrits.com/avatars/rolox_avatar.png
+352,Fiender,https://cdn.worldofmiscrits.com/avatars/airyn_avatar.png
+356,Pillblaze,https://cdn.worldofmiscrits.com/avatars/charrill_avatar.png
+367,Blub,https://cdn.worldofmiscrits.com/avatars/gargantubolt_avatar.png
+376,Cerberuff,https://cdn.worldofmiscrits.com/avatars/mongrian_avatar.png
+378,Auger,https://cdn.worldofmiscrits.com/avatars/rivett_avatar.png
+380,Flurfy,https://cdn.worldofmiscrits.com/avatars/kvetch_avatar.png
+382,Squirmle,https://cdn.worldofmiscrits.com/avatars/weylani_avatar.png
+388,Lil Bubs,https://cdn.worldofmiscrits.com/avatars/chubbles_avatar.png
+390,Peekly,https://cdn.worldofmiscrits.com/avatars/shamar_avatar.png
+404,Splender,https://cdn.worldofmiscrits.com/avatars/bolderon_avatar.png
+405,Dorux,https://cdn.worldofmiscrits.com/avatars/doruden_avatar.png
+417,Fubby,https://cdn.worldofmiscrits.com/avatars/wachter_avatar.png
+419,Pennon,https://cdn.worldofmiscrits.com/avatars/blowhemoth_avatar.png
+420,Ekkult,https://cdn.worldofmiscrits.com/avatars/arcanaclaw_avatar.png
+425,Defilio,https://cdn.worldofmiscrits.com/avatars/spoiler_avatar.png
+430,Blighted Cubsprout,https://cdn.worldofmiscrits.com/avatars/blighted_bloomane_avatar.png
+433,Blighted Flue,https://cdn.worldofmiscrits.com/avatars/blighted_afterburn_avatar.png
+438,Blobroller,https://cdn.worldofmiscrits.com/avatars/vampsower_avatar.png
+451,Light Nibbles,https://cdn.worldofmiscrits.com/avatars/light_coyver_avatar.png
+456,Light Frostmite,https://cdn.worldofmiscrits.com/avatars/light_abomino_avatar.png
+457,Light Bludger,https://cdn.worldofmiscrits.com/avatars/light_convincer_avatar.png
+458,Light Zaptor,https://cdn.worldofmiscrits.com/avatars/light_tesladon_avatar.png
+459,Light Quirk,https://cdn.worldofmiscrits.com/avatars/light_subterhuge_avatar.png
+476,Light Statikat,https://cdn.worldofmiscrits.com/avatars/light_panthundra_avatar.png
+480,Dark Spinnerette,https://cdn.worldofmiscrits.com/avatars/dark_gigantula_avatar.png
+488,Light Twiggum,https://cdn.worldofmiscrits.com/avatars/light_willoak_avatar.png
+493,Aquarion,https://cdn.worldofmiscrits.com/avatars/krakyn_avatar.png
+500,Blighted Fiender,https://cdn.worldofmiscrits.com/avatars/blighted_airyn_avatar.png
+501,Blighted Kiloray,https://cdn.worldofmiscrits.com/avatars/blighted_edison_ray_avatar.png
+502,Dark Shellbee,https://cdn.worldofmiscrits.com/avatars/dark_kalamos_avatar.png
+503,Liothning,https://cdn.worldofmiscrits.com/avatars/gorgonthunder_avatar.png
+504,Dark Lumera,https://cdn.worldofmiscrits.com/avatars/dark_anublaze_avatar.png
+505,Dark Steamguin,https://cdn.worldofmiscrits.com/avatars/dark_aukamotive_avatar.png
+506,Dark Poltergust,https://cdn.worldofmiscrits.com/avatars/dark_zephyrgeist_avatar.png
+507,Dark Treemur,https://cdn.worldofmiscrits.com/avatars/dark_monfiki_avatar.png
+508,Foil Vexie,https://cdn.worldofmiscrits.com/avatars/foil_alionyx_avatar.png
+509,Foil Vhisp,https://cdn.worldofmiscrits.com/avatars/foil_fangale_avatar.png
+510,Dark Sparkupine,https://cdn.worldofmiscrits.com/avatars/dark_wiquill_avatar.png
+511,Dark Squibee,https://cdn.worldofmiscrits.com/avatars/dark_krakenhook_avatar.png
+512,Dark Waddles,https://cdn.worldofmiscrits.com/avatars/dark_mallardon_avatar.png
+513,Dark Twiggum,https://cdn.worldofmiscrits.com/avatars/dark_willoak_avatar.png
+514,Dark Auger,https://cdn.worldofmiscrits.com/avatars/dark_rivett_avatar.png
+515,Dark Aria,https://cdn.worldofmiscrits.com/avatars/dark_wyndasia_avatar.png
+516,Light Rafiery,https://cdn.worldofmiscrits.com/avatars/light_stomprage_avatar.png
+517,Light Fossillia,https://cdn.worldofmiscrits.com/avatars/light_primordius_avatar.png
+518,Light Nanaslug,https://cdn.worldofmiscrits.com/avatars/light_tornadouse_avatar.png
+519,Light Crickin,https://cdn.worldofmiscrits.com/avatars/light_praze_avatar.png
+520,Light Flue,https://cdn.worldofmiscrits.com/avatars/light_afterburn_avatar.png
+521,Light Grubbean,https://cdn.worldofmiscrits.com/avatars/light_thornaxis_avatar.png
+522,Ribos,https://cdn.worldofmiscrits.com/avatars/plasmaree_avatar.png
+523,Light Sparkspeck,https://cdn.worldofmiscrits.com/avatars/light_glitterglint_avatar.png
+524,Light Wavesling,https://cdn.worldofmiscrits.com/avatars/light_nessilisk_avatar.png
+525,Light Jack,https://cdn.worldofmiscrits.com/avatars/light_tuzee_avatar.png
+526,Light Flurfy,https://cdn.worldofmiscrits.com/avatars/light_kvetch_avatar.png
+527,Light Slithero,https://cdn.worldofmiscrits.com/avatars/light_incineron_avatar.png
+528,Light Squibee,https://cdn.worldofmiscrits.com/avatars/light_krakenhook_avatar.png
+529,Light Digsy,https://cdn.worldofmiscrits.com/avatars/light_excavior_avatar.png
+530,Light Ignios,https://cdn.worldofmiscrits.com/avatars/light_preliator_avatar.png
+531,Light Mumbah,https://cdn.worldofmiscrits.com/avatars/light_sphynxus_avatar.png
+532,Dark Tongutail,https://cdn.worldofmiscrits.com/avatars/dark_bifurcrystal_avatar.png
+533,Dark Lavarilla,https://cdn.worldofmiscrits.com/avatars/dark_obsidiape_avatar.png
+534,Dark Frostmite,https://cdn.worldofmiscrits.com/avatars/dark_abomino_avatar.png
+535,Dark Tulipinny,https://cdn.worldofmiscrits.com/avatars/dark_ongabonga_avatar.png
+536,Dark Flutterpat,https://cdn.worldofmiscrits.com/avatars/dark_gazaereal_avatar.png
+537,Dark Slithero,https://cdn.worldofmiscrits.com/avatars/dark_incineron_avatar.png
+538,Keeper,https://cdn.worldofmiscrits.com/avatars/fortifield_avatar.png
+539,Dark Luna,https://cdn.worldofmiscrits.com/avatars/dark_antennious_avatar.png
+540,Foil Luna,https://cdn.worldofmiscrits.com/avatars/foil_antennious_avatar.png
+541,Sol,https://cdn.worldofmiscrits.com/avatars/cithreus_avatar.png
+542,Dreamger,https://cdn.worldofmiscrits.com/avatars/traumauler_avatar.png
+543,Light Weevern,https://cdn.worldofmiscrits.com/avatars/light_serpasoar_avatar.png
+544,Dark Quirk,https://cdn.worldofmiscrits.com/avatars/dark_subterhuge_avatar.png
+545,Dark Squirmle,https://cdn.worldofmiscrits.com/avatars/dark_weylani_avatar.png
+546,Blighted Flowerpiller,https://cdn.worldofmiscrits.com/avatars/blighted_fairyblossom_avatar.png
+547,Dark Jellyshock,https://cdn.worldofmiscrits.com/avatars/dark_medustung_avatar.png
+548,Light Hawkai,https://cdn.worldofmiscrits.com/avatars/light_hawkogan_avatar.png
+549,Dark Vexie,https://cdn.worldofmiscrits.com/avatars/dark_alionyx_avatar.png
+550,Da Windy,https://cdn.worldofmiscrits.com/avatars/michelangelus_avatar.png
+551,Light Snorkels,https://cdn.worldofmiscrits.com/avatars/light_leviafin_avatar.png
+552,Foil Croaky,https://cdn.worldofmiscrits.com/avatars/foil_geotoad_avatar.png
+553,Freezet,https://cdn.worldofmiscrits.com/avatars/blizzword_avatar.png
+554,Dark Pillblaze,https://cdn.worldofmiscrits.com/avatars/dark_charrill_avatar.png
+555,Rudy,https://cdn.worldofmiscrits.com/avatars/coalrus_avatar.png
+556,Manio,https://cdn.worldofmiscrits.com/avatars/starshow_avatar.png
+557,Mistraxol,https://cdn.worldofmiscrits.com/avatars/olmisteus_avatar.png
+558,Orbling,https://cdn.worldofmiscrits.com/avatars/caverachna_avatar.png
+559,Zappup,https://cdn.worldofmiscrits.com/avatars/thunderuff_avatar.png
+560,Pestling,https://cdn.worldofmiscrits.com/avatars/wicking_avatar.png
+561,Woolly,https://cdn.worldofmiscrits.com/avatars/styrammuth_avatar.png
+562,Frozy,https://cdn.worldofmiscrits.com/avatars/citashell_avatar.png
+563,Stalkra,https://cdn.worldofmiscrits.com/avatars/leffa_avatar.png
+564,Mech,https://cdn.worldofmiscrits.com/avatars/destructo_avatar.png
+565,Rexie,https://cdn.worldofmiscrits.com/avatars/tyrant_avatar.png
+566,Warrian,https://cdn.worldofmiscrits.com/avatars/moltrusian_avatar.png
+567,Aebex,https://cdn.worldofmiscrits.com/avatars/inhalate_avatar.png
+568,Charix,https://cdn.worldofmiscrits.com/avatars/carnagion_avatar.png
+569,Alpha,https://cdn.worldofmiscrits.com/avatars/sire_avatar.png
+570,Charpy,https://cdn.worldofmiscrits.com/avatars/chimpferno_avatar.png
+571,Lambolt,https://cdn.worldofmiscrits.com/avatars/lycanimbus_avatar.png
+572,Gravitron,https://cdn.worldofmiscrits.com/avatars/gate_keeper_avatar.png
+573,Babakku,https://cdn.worldofmiscrits.com/avatars/lundevour_avatar.png
+574,Smolderfry,https://cdn.worldofmiscrits.com/avatars/clawsteroid_avatar.png
+575,Moondrip,https://cdn.worldofmiscrits.com/avatars/noxilunar_avatar.png
+576,Shroolet,https://cdn.worldofmiscrits.com/avatars/funglor_avatar.png
+577,Lumite,https://cdn.worldofmiscrits.com/avatars/gemarax_avatar.png
+578,Voidotron,https://cdn.worldofmiscrits.com/avatars/void_warden_avatar.png
+579,Niboro,https://cdn.worldofmiscrits.com/avatars/monodra_avatar.png
+580,Pinplar,https://cdn.worldofmiscrits.com/avatars/bonefish_avatar.png
+581,Lithos,https://cdn.worldofmiscrits.com/avatars/progenitus_avatar.png
+582,Brainzer,https://cdn.worldofmiscrits.com/avatars/egghead_avatar.png
+583,Pyrex,https://cdn.worldofmiscrits.com/avatars/novasol_avatar.png
+584,Oozie,https://cdn.worldofmiscrits.com/avatars/slimonda_avatar.png
+585,Lunako,https://cdn.worldofmiscrits.com/avatars/mograkoon_avatar.png
+586,Rephily,https://cdn.worldofmiscrits.com/avatars/tyvalune_avatar.png
+587,Eluzar,https://cdn.worldofmiscrits.com/avatars/tenebu_avatar.png
+588,Furiko,https://cdn.worldofmiscrits.com/avatars/vulcrysa_avatar.png
+589,Bunplop,https://cdn.worldofmiscrits.com/avatars/vornaclast_avatar.png
+590,Drilune,https://cdn.worldofmiscrits.com/avatars/acarion_avatar.png
+591,Flaclay,https://cdn.worldofmiscrits.com/avatars/magros_avatar.png
+592,Enex,https://cdn.worldofmiscrits.com/avatars/eclipsagon_avatar.png
+593,Voltombra,https://cdn.worldofmiscrits.com/avatars/zevurnox_avatar.png
+594,Eclipso,https://cdn.worldofmiscrits.com/avatars/tenebros_avatar.png
+595,Osmeron,https://cdn.worldofmiscrits.com/avatars/mystacle_avatar.png
+596,Mooncrit,https://cdn.worldofmiscrits.com/avatars/crateron_avatar.png
+597,Beateorite,https://cdn.worldofmiscrits.com/avatars/armageddon_avatar.png
+598,Silkire,https://cdn.worldofmiscrits.com/avatars/infernofang_avatar.png
+599,Zephry,https://cdn.worldofmiscrits.com/avatars/valydorm_avatar.png
+600,Fungask,https://cdn.worldofmiscrits.com/avatars/venoplazm_avatar.png
+601,Larbunni,https://cdn.worldofmiscrits.com/avatars/yutuluna_avatar.png
+602,Yuefira,https://cdn.worldofmiscrits.com/avatars/cnidalien_avatar.png
+603,Mucora,https://cdn.worldofmiscrits.com/avatars/mortovela_avatar.png
+604,Goo,https://cdn.worldofmiscrits.com/avatars/necroslime_avatar.png
+605,Avarus,https://cdn.worldofmiscrits.com/avatars/thanaross_avatar.png
+606,Beakka,https://cdn.worldofmiscrits.com/avatars/rupturea_avatar.png
+607,Whispen,https://cdn.worldofmiscrits.com/avatars/ectyros_avatar.png
+608,Fickra,https://cdn.worldofmiscrits.com/avatars/zatavol_avatar.png
+609,Pirate Bludger,https://cdn.worldofmiscrits.com/avatars/pirate_convincer_avatar.png
+610,Lutox,https://cdn.worldofmiscrits.com/avatars/sigarope_avatar.png
+611,Deetlee,https://cdn.worldofmiscrits.com/avatars/kopul_avatar.png
+612,Ampupine,https://cdn.worldofmiscrits.com/avatars/thundra_avatar.png
+613,Hekatom,https://cdn.worldofmiscrits.com/avatars/unbound_avatar.png
+614,Scarecrow Charix,https://cdn.worldofmiscrits.com/avatars/scarecrow_carnagion_avatar.png
+615,Vamp Skustunk,https://cdn.worldofmiscrits.com/avatars/vamp_sulfurious_avatar.png
+616,Grimm Kiloray,https://cdn.worldofmiscrits.com/avatars/grimm_edison_ray_avatar.png
+617,Rocker Octavio,https://cdn.worldofmiscrits.com/avatars/rocker_dischord_avatar.png
+618,Boo Blazertooth,https://cdn.worldofmiscrits.com/avatars/boo_minotorch_avatar.png
+619,Geneseed,https://cdn.worldofmiscrits.com/avatars/netherreap_avatar.png
+620,Sora,https://cdn.worldofmiscrits.com/avatars/zephtsune_avatar.png
+621,Dark Sparkslug,https://cdn.worldofmiscrits.com/avatars/dark_buzzcargo_avatar.png
+622,Phoboros,https://cdn.worldofmiscrits.com/avatars/stravatach_avatar.png
+623,Lagoony,https://cdn.worldofmiscrits.com/avatars/blackfin_avatar.png
+624,Poppet,https://cdn.worldofmiscrits.com/avatars/breocharn_avatar.png
+625,Nubyll,https://cdn.worldofmiscrits.com/avatars/mrakovlad_avatar.png
+626,Elphin,https://cdn.worldofmiscrits.com/avatars/makras_avatar.png
+627,Luvcraft,https://cdn.worldofmiscrits.com/avatars/cthulith_avatar.png
+628,Damse,https://cdn.worldofmiscrits.com/avatars/beruette_avatar.png
+629,Beldame,https://cdn.worldofmiscrits.com/avatars/bakuyaga_avatar.png
+630,Viperd,https://cdn.worldofmiscrits.com/avatars/toucanaconda_avatar.png
+631,Blowpuffle,https://cdn.worldofmiscrits.com/avatars/octopuff_avatar.png
+632,Squawcat,https://cdn.worldofmiscrits.com/avatars/gryndle_avatar.png
+633,Dark Weevern,https://cdn.worldofmiscrits.com/avatars/dark_serpasoar_avatar.png
+634,Pangoleaf,https://cdn.worldofmiscrits.com/avatars/spikrus_avatar.png
+635,Foil Pamboo,https://cdn.worldofmiscrits.com/avatars/foil_pixiuma_avatar.png
+636,Gippo,https://cdn.worldofmiscrits.com/avatars/sharkranha_avatar.png
+637,Hoghedge,https://cdn.worldofmiscrits.com/avatars/stumperback_avatar.png
+638,Shroomer,https://cdn.worldofmiscrits.com/avatars/sporott_avatar.png
+639,Daloo,https://cdn.worldofmiscrits.com/avatars/vaporo_avatar.png
+640,Dark Whik,https://cdn.worldofmiscrits.com/avatars/dark_vesuvion_avatar.png
+641,Bloombat,https://cdn.worldofmiscrits.com/avatars/vampvine_avatar.png
+642,Nyma,https://cdn.worldofmiscrits.com/avatars/mirindo_avatar.png
+643,Kitpole,https://cdn.worldofmiscrits.com/avatars/kyubigama_avatar.png
+644,Magpole,https://cdn.worldofmiscrits.com/avatars/helioxic_avatar.png
+645,Beetor,https://cdn.worldofmiscrits.com/avatars/dungaroll_avatar.png
+646,Liquifien,https://cdn.worldofmiscrits.com/avatars/invatorres_avatar.png
+647,Glary,https://cdn.worldofmiscrits.com/avatars/blowstoll_avatar.png
+648,Foil Liquifien,https://cdn.worldofmiscrits.com/avatars/foil_invatorres_avatar.png
+649,Pachydo,https://cdn.worldofmiscrits.com/avatars/behemammoth_avatar.png
+650,Gurgleplops,https://cdn.worldofmiscrits.com/avatars/blargles_avatar.png
+651,Budillo,https://cdn.worldofmiscrits.com/avatars/perenniax_avatar.png
+652,Pithapillar,https://cdn.worldofmiscrits.com/avatars/pitheyaur_avatar.png
+653,Dark Bubbles,https://cdn.worldofmiscrits.com/avatars/dark_popiller_avatar.png
+654,Pyras,https://cdn.worldofmiscrits.com/avatars/baloognio_avatar.png
+655,Foil Rockodile,https://cdn.worldofmiscrits.com/avatars/foil_growliath_avatar.png
+656,Bunaken,https://cdn.worldofmiscrits.com/avatars/mermafox_avatar.png
+657,Lheon,https://cdn.worldofmiscrits.com/avatars/obsideron_avatar.png
+658,Dark Hoghedge,https://cdn.worldofmiscrits.com/avatars/dark_stumperback_avatar.png
+659,Dark Beetor,https://cdn.worldofmiscrits.com/avatars/dark_dungaroll_avatar.png
+660,Zhakor,https://cdn.worldofmiscrits.com/avatars/muskesilik_avatar.png
+661,Foil Pangoleaf,https://cdn.worldofmiscrits.com/avatars/foil_spikrus_avatar.png
+662,Blug,https://cdn.worldofmiscrits.com/avatars/flyetir_avatar.png
+663,Dark Humbug,https://cdn.worldofmiscrits.com/avatars/dark_aviona_avatar.png
+664,Kawanko,https://cdn.worldofmiscrits.com/avatars/ningyokami_avatar.png
+665,Casanova,https://cdn.worldofmiscrits.com/avatars/quiver_avatar.png
+666,Dabee,https://cdn.worldofmiscrits.com/avatars/apiflora_avatar.png
+667,Dark Viperd,https://cdn.worldofmiscrits.com/avatars/dark_toucanaconda_avatar.png
+668,Dark Gurgleplops,https://cdn.worldofmiscrits.com/avatars/dark_blargles_avatar.png
+669,Agnuf,https://cdn.worldofmiscrits.com/avatars/cantalus_avatar.png
+670,Piskie,https://cdn.worldofmiscrits.com/avatars/seelie_avatar.png
